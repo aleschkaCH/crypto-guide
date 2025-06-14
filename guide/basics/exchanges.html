@@ -1,0 +1,816 @@
+<!-- /guide/basics/exchanges.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криптовалютные биржи | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полное руководство по криптовалютным биржам. Узнайте, что такое биржи, их виды, как выбрать надёжную платформу и безопасно торговать.">
+    <meta name="keywords"
+        content="криптобиржи, Binance, Coinbase, биржи криптовалют, торговля, покупка Bitcoin, CEX, DEX">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок статьи -->
+                <header class="mb-5 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Криптовалютные биржи</h1>
+                    <p class="lead text-muted">Площадки для покупки, продажи и обмена криптовалют — ваш вход в мир
+                        цифровых денег</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                        <span class="badge bg-light text-dark">Время чтения: 11 минут</span>
+                        <span class="badge bg-primary">Уровень: Начинающий</span>
+                    </div>
+                </header>
+
+                <!-- Содержание -->
+                <article>
+                    <!-- Введение -->
+                    <div class="alert alert-info border-0 mb-5">
+                        <div class="d-flex">
+                            <i class="bi bi-info-circle-fill me-3 mt-1"></i>
+                            <div>
+                                <h5 class="alert-heading">Быстрый ответ</h5>
+                                <p class="mb-0">Криптобиржа — это онлайн-платформа, где можно покупать, продавать и
+                                    обменивать криптовалюты за обычные деньги или другие криптовалюты. Это как обменник
+                                    валют, только для цифровых денег.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Раздел 1: Что такое биржа -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Что такое криптобиржа</h2>
+
+                        <p>Представьте обычный валютный обменник, но работающий круглосуточно и с тысячами различных
+                            валют:</p>
+
+                        <div class="row g-4 my-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-shop text-primary fs-1 mb-3"></i>
+                                        <h5>Торговая площадка</h5>
+                                        <p class="text-muted mb-0">Место, где встречаются покупатели и продавцы
+                                            криптовалют</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-clock text-success fs-1 mb-3"></i>
+                                        <h5>24/7 работа</h5>
+                                        <p class="text-muted mb-0">Торговля не останавливается — ни выходных, ни
+                                            праздников</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-globe text-warning fs-1 mb-3"></i>
+                                        <h5>Глобальный доступ</h5>
+                                        <p class="text-muted mb-0">Торговцы со всего мира участвуют в одной площадке</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-currency-exchange text-info fs-1 mb-3"></i>
+                                        <h5>Множество пар</h5>
+                                        <p class="text-muted mb-0">Тысячи торговых пар: BTC/USD, ETH/BTC, TON/USDT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 2: Типы бирж -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Централизованные vs Децентрализованные биржи</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-header bg-primary text-white text-center">
+                                        <i class="bi bi-building fs-2"></i>
+                                        <h4 class="mt-2 mb-0">CEX</h4>
+                                        <small>Централизованные биржи</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-primary">Как обычные банки</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle text-success me-2"></i>Простота
+                                                использования</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Высокая
+                                                ликвидность</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle text-success me-2"></i>Поддержка клиентов
+                                            </li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Фиатные
+                                                валюты</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Контролируют
+                                                ваши средства</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Могут
+                                                заблокировать</li>
+                                        </ul>
+                                        <div class="mt-3">
+                                            <small class="text-muted"><strong>Примеры:</strong></small>
+                                            <div class="d-flex flex-wrap gap-1 mt-1">
+                                                <span class="badge bg-warning">Binance</span>
+                                                <span class="badge bg-primary">Coinbase</span>
+                                                <span class="badge bg-success">OKX</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white text-center">
+                                        <i class="bi bi-people fs-2"></i>
+                                        <h4 class="mt-2 mb-0">DEX</h4>
+                                        <small>Децентрализованные биржи</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-success">Полный контроль</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Вы
+                                                контролируете средства</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Нет
+                                                регистрации</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Никто
+                                                не может заблокировать</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle text-success me-2"></i>Прозрачность</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Сложнее для
+                                                новичков</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Только
+                                                криптовалюты</li>
+                                        </ul>
+                                        <div class="mt-3">
+                                            <small class="text-muted"><strong>Примеры:</strong></small>
+                                            <div class="d-flex flex-wrap gap-1 mt-1">
+                                                <span class="badge bg-success">Uniswap</span>
+                                                <span class="badge bg-warning">PancakeSwap</span>
+                                                <span class="badge bg-info">1inch</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 3: Популярные биржи -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Топ централизованных бирж</h2>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-hexagon-fill fs-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Binance</h5>
+                                                <small class="text-muted">Крупнейшая биржа мира</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-3">Самые низкие комиссии, огромный выбор криптовалют,
+                                            продвинутые инструменты торговли.</p>
+                                        <div class="row text-center">
+                                            <div class="col-4">
+                                                <small class="text-muted">Комиссии</small>
+                                                <div class="text-success">0.1%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Монет</small>
+                                                <div class="text-primary">600+</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Рейтинг</small>
+                                                <div class="text-warning">★★★★★</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-coin fs-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Coinbase</h5>
+                                                <small class="text-muted">Для новичков из США</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-3">Самая простая и безопасная биржа. Идеальна для первой
+                                            покупки Bitcoin. Регулируется в США.</p>
+                                        <div class="row text-center">
+                                            <div class="col-4">
+                                                <small class="text-muted">Комиссии</small>
+                                                <div class="text-warning">0.5%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Монет</small>
+                                                <div class="text-primary">200+</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Рейтинг</small>
+                                                <div class="text-primary">★★★★☆</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-check-circle fs-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">OKX</h5>
+                                                <small class="text-muted">Продвинутая торговля</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-3">Мощные инструменты для трейдинга, низкие комиссии,
+                                            поддержка DeFi и Web3.</p>
+                                        <div class="row text-center">
+                                            <div class="col-4">
+                                                <small class="text-muted">Комиссии</small>
+                                                <div class="text-success">0.1%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Монет</small>
+                                                <div class="text-primary">400+</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Рейтинг</small>
+                                                <div class="text-success">★★★★☆</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-lightning fs-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Bybit</h5>
+                                                <small class="text-muted">Деривативы и фьючерсы</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-3">Специализируется на торговле с кредитным плечом и
+                                            фьючерсными контрактами.</p>
+                                        <div class="row text-center">
+                                            <div class="col-4">
+                                                <small class="text-muted">Комиссии</small>
+                                                <div class="text-success">0.1%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Монет</small>
+                                                <div class="text-primary">300+</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <small class="text-muted">Рейтинг</small>
+                                                <div class="text-info">★★★★☆</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 4: Как выбрать биржу -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как выбрать подходящую биржу</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-person-plus text-success fs-3 me-3"></i>
+                                            <h5 class="mb-0">Для новичков</h5>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Простой
+                                                интерфейс</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Поддержка
+                                                фиатных валют</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Хорошая
+                                                поддержка клиентов</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Репутация
+                                                и регулирование</li>
+                                        </ul>
+                                        <div class="bg-success bg-opacity-10 p-3 rounded">
+                                            <strong class="text-success">Рекомендация:</strong> Coinbase, Binance
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-graph-up text-primary fs-3 me-3"></i>
+                                            <h5 class="mb-0">Для трейдеров</h5>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Низкие
+                                                комиссии</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-arrow-right text-muted me-2"></i>Продвинутые
+                                                инструменты</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>Высокая
+                                                ликвидность</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right text-muted me-2"></i>API для
+                                                ботов</li>
+                                        </ul>
+                                        <div class="bg-primary bg-opacity-10 p-3 rounded">
+                                            <strong class="text-primary">Рекомендация:</strong> Binance, OKX, Bybit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 5: Первые шаги -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Первая покупка криптовалюты</h2>
+
+                        <div class="bg-light p-4 rounded-3 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 70px; height: 70px;">
+                                        <i class="bi bi-person-plus fs-4"></i>
+                                    </div>
+                                    <h6 class="mt-2">1. Регистрация</h6>
+                                    <small class="text-muted">Создайте аккаунт</small>
+                                </div>
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-success text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 70px; height: 70px;">
+                                        <i class="bi bi-shield-check fs-4"></i>
+                                    </div>
+                                    <h6 class="mt-2">2. Верификация</h6>
+                                    <small class="text-muted">Подтвердите личность</small>
+                                </div>
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-warning text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 70px; height: 70px;">
+                                        <i class="bi bi-credit-card fs-4"></i>
+                                    </div>
+                                    <h6 class="mt-2">3. Пополнение</h6>
+                                    <small class="text-muted">Внесите деньги</small>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="bg-info text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 70px; height: 70px;">
+                                        <i class="bi bi-cart fs-4"></i>
+                                    </div>
+                                    <h6 class="mt-2">4. Покупка</h6>
+                                    <small class="text-muted">Купите криптовалюту</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info border-0">
+                            <div class="d-flex">
+                                <i class="bi bi-lightbulb-fill me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">Совет для новичков</h6>
+                                    <p class="mb-0">Начните с небольшой суммы для изучения интерфейса. Купите Bitcoin
+                                        или Ethereum — самые надёжные и ликвидные криптовалюты.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 6: Комиссии -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Типы комиссий на биржах</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-arrow-left-right text-primary fs-3 me-3"></i>
+                                            <h5 class="mb-0">Торговые комиссии</h5>
+                                        </div>
+                                        <p class="text-muted">За каждую сделку купли-продажи.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-1"><strong>Maker:</strong> <span
+                                                    class="text-success">0.1%</span> (создаёте ордер)</li>
+                                            <li class="mb-1"><strong>Taker:</strong> <span
+                                                    class="text-warning">0.1%</span> (покупаете по рынку)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-arrow-up text-warning fs-3 me-3"></i>
+                                            <h5 class="mb-0">Комиссии вывода</h5>
+                                        </div>
+                                        <p class="text-muted">За перевод криптовалют в ваш кошелёк.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-1"><strong>Bitcoin:</strong> <span class="text-warning">0.0005
+                                                    BTC</span></li>
+                                            <li class="mb-1"><strong>Ethereum:</strong> <span class="text-warning">0.005
+                                                    ETH</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-credit-card text-success fs-3 me-3"></i>
+                                            <h5 class="mb-0">Комиссии пополнения</h5>
+                                        </div>
+                                        <p class="text-muted">За внесение фиатных денег.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-1"><strong>Банковская карта:</strong> <span
+                                                    class="text-warning">1-3%</span></li>
+                                            <li class="mb-1"><strong>Банковский перевод:</strong> <span
+                                                    class="text-success">0%</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="bi bi-currency-exchange text-info fs-3 me-3"></i>
+                                            <h5 class="mb-0">Спреды</h5>
+                                        </div>
+                                        <p class="text-muted">Разница между ценой покупки и продажи.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-1"><strong>Популярные пары:</strong> <span
+                                                    class="text-success">0.01-0.1%</span></li>
+                                            <li class="mb-1"><strong>Редкие токены:</strong> <span
+                                                    class="text-warning">1-5%</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 7: Безопасность -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Безопасность на биржах</h2>
+
+                        <div class="alert alert-danger border-0 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-shield-exclamation me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">Главное правило</h6>
+                                    <p class="mb-0">Не храните большие суммы на бирже постоянно! Биржи — это для
+                                        торговли, а не для хранения. Переводите криптовалюты в свой кошелёк после
+                                        покупки.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-shield-check me-2"></i>Защитите аккаунт</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-key text-success me-2"></i>Используйте
+                                                сложный уникальный пароль</li>
+                                            <li class="mb-2"><i class="bi bi-phone text-success me-2"></i>Включите
+                                                двухфакторную аутентификацию (2FA)</li>
+                                            <li class="mb-2"><i class="bi bi-envelope text-success me-2"></i>Подтвердите
+                                                email и телефон</li>
+                                            <li class="mb-2"><i class="bi bi-geo text-success me-2"></i>Настройте
+                                                уведомления о входах</li>
+                                            <li class="mb-2"><i class="bi bi-lock text-success me-2"></i>Используйте
+                                                whitelist адресов</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-header bg-warning text-white">
+                                        <h5 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Избегайте ошибок
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Не
+                                                переходите по подозрительным ссылкам</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Не сообщайте
+                                                пароли поддержке</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Не торгуйте
+                                                через публичный Wi-Fi</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Не
+                                                используйте VPN при торговле</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Не качайте
+                                                поддельные приложения</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 8: Типы ордеров -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Основные типы ордеров</h2>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-lightning"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Market (рыночный)</h5>
+                                                <small class="text-muted">Мгновенная покупка</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Покупка или продажа по текущей рыночной цене. Исполняется
+                                            моментально.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Быстро</span>
+                                            <span class="badge bg-warning">Выше комиссия</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-target"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Limit (лимитный)</h5>
+                                                <small class="text-muted">По желаемой цене</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Покупка или продажа по указанной вами цене. Может не
+                                            исполниться.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-primary">Контроль цены</span>
+                                            <span class="badge bg-success">Ниже комиссия</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-arrow-down"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Stop-Loss</h5>
+                                                <small class="text-muted">Ограничение потерь</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Автоматическая продажа при падении цены ниже указанного
+                                            уровня.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-warning">Защита</span>
+                                            <span class="badge bg-info">Для трейдеров</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-arrow-up"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Take-Profit</h5>
+                                                <small class="text-muted">Фиксация прибыли</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Автоматическая продажа при достижении целевой цены для
+                                            получения прибыли.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Прибыль</span>
+                                            <span class="badge bg-info">Для трейдеров</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 9: Риски -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Основные риски</h2>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-building-x text-danger fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Риск биржи</h6>
+                                        <small class="text-muted">Биржа может обанкротиться или быть взломана</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-graph-down text-warning fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Волатильность</h6>
+                                        <small class="text-muted">Цены могут резко изменяться</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-shield-x text-danger fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Кибератаки</h6>
+                                        <small class="text-muted">Хакеры могут украсть ваши средства</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-exclamation-triangle text-warning fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Человеческий фактор</h6>
+                                        <small class="text-muted">Ошибки при торговле могут дорого стоить</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 10: P2P торговля -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">P2P торговля</h2>
+
+                        <div class="bg-light p-4 rounded-3 mb-4">
+                            <h6 class="fw-bold mb-3">Что такое P2P?</h6>
+                            <p class="mb-0">Peer-to-peer торговля — это покупка криптовалют напрямую у других
+                                пользователей. Биржа выступает посредником и гарантом сделки.</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Преимущества P2P</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Больше
+                                                способов оплаты</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Лучшие
+                                                курсы</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Местные
+                                                валюты</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Прямое
+                                                общение</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-header bg-warning text-white">
+                                        <h5 class="mb-0">Недостатки P2P</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Дольше по
+                                                времени</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Риск
+                                                мошенничества</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Нужно
+                                                проверять продавца</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Споры и
+                                                разбирательства</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card bg-gradient text-dark border-0"
+                            style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">Главное о биржах</h3>
+                                <p class="card-text">Биржи — это ваш вход в мир криптовалют. Начните с надёжных платформ
+                                    вроде Coinbase или Binance, изучите интерфейс на небольших суммах, обязательно
+                                    настройте безопасность и помните главное правило: не храните большие суммы на бирже.
+                                </p>
+                                <p class="card-text mb-0"><strong>Следующий шаг:</strong> изучите комиссии и газ — как
+                                    работает оплата транзакций в блокчейне.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Crypto Guide CH. Образовательный проект.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>
