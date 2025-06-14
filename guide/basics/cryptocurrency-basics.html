@@ -1,0 +1,456 @@
+<!-- /guide/basics/cryptocurrency-basics.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что такое Криптовалюта | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полное руководство по криптовалютам. Узнайте, что такое криптовалюта, как она работает, виды и особенности цифровых денег.">
+    <meta name="keywords" content="криптовалюта, bitcoin, ethereum, цифровые деньги, блокчейн, майнинг, кошелек">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок статьи -->
+                <header class="mb-5 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Что такое криптовалюта?</h1>
+                    <p class="lead text-muted">Цифровые деньги нового поколения, которые работают без банков и границ
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                        <span class="badge bg-light text-dark">Время чтения: 9 минут</span>
+                        <span class="badge bg-primary">Уровень: Начинающий</span>
+                    </div>
+                </header>
+
+                <!-- Содержание -->
+                <article>
+                    <!-- Введение -->
+                    <div class="alert alert-info border-0 mb-5">
+                        <div class="d-flex">
+                            <i class="bi bi-info-circle-fill me-3 mt-1"></i>
+                            <div>
+                                <h5 class="alert-heading">Быстрый ответ</h5>
+                                <p class="mb-0">Криптовалюта — это цифровые деньги, защищённые криптографией и
+                                    работающие на основе блокчейн-технологии. Они не контролируются банками или
+                                    правительствами.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Раздел 1: Простое объяснение -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Простыми словами</h2>
+
+                        <p>Представьте обычные деньги, но:</p>
+
+                        <div class="row g-4 my-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-phone text-primary fs-1 mb-3"></i>
+                                        <h5>Полностью цифровые</h5>
+                                        <p class="text-muted mb-0">Существуют только в электронном виде, нет физических
+                                            монет или банкнот</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-shield-lock text-success fs-1 mb-3"></i>
+                                        <h5>Защищены криптографией</h5>
+                                        <p class="text-muted mb-0">Используют математические алгоритмы для защиты от
+                                            подделки</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-people text-warning fs-1 mb-3"></i>
+                                        <h5>Децентрализованные</h5>
+                                        <p class="text-muted mb-0">Не контролируются банками, работают на основе сети
+                                            участников</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-globe text-info fs-1 mb-3"></i>
+                                        <h5>Глобальные</h5>
+                                        <p class="text-muted mb-0">Работают в любой точке мира, нет границ и валютных
+                                            курсов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 2: Как работает -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как работают криптовалюты</h2>
+
+                        <div class="bg-light p-4 rounded-3 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-wallet2 fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">1. Кошелёк</h6>
+                                    <small class="text-muted">У вас есть цифровой кошелёк</small>
+                                </div>
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-success text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-arrow-right-left fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">2. Транзакция</h6>
+                                    <small class="text-muted">Отправляете криптовалюту</small>
+                                </div>
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-warning text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-check-circle fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">3. Проверка</h6>
+                                    <small class="text-muted">Сеть проверяет операцию</small>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="bg-info text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-journal-check fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">4. Запись</h6>
+                                    <small class="text-muted">Операция записана навсегда</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning border-0">
+                            <div class="d-flex">
+                                <i class="bi bi-exclamation-triangle-fill me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">Важно помнить</h6>
+                                    <p class="mb-0">В отличие от банковских переводов, транзакции с криптовалютами
+                                        необратимы. Если вы отправили средства не туда, вернуть их практически
+                                        невозможно.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 3: Популярные криптовалюты -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Самые известные криптовалюты</h2>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-currency-bitcoin"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Bitcoin (BTC)</h5>
+                                                <small class="text-muted">Первая криптовалюта</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Создан в 2009 году. Цифровое золото — средство сбережения
+                                            и международных переводов. Ограниченная эмиссия: всего 21 миллион монет.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-diamond"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Ethereum (ETH)</h5>
+                                                <small class="text-muted">Блокчейн-платформа</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Не только валюта, но и платформа для смарт-контрактов и
+                                            приложений. Основа для большинства DeFi проектов и NFT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-lightning"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Toncoin (TON)</h5>
+                                                <small class="text-muted">Быстрый блокчейн</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Высокоскоростной блокчейн, интегрированный с Telegram.
+                                            Низкие комиссии и быстрые транзакции.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-coin"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Stablecoins</h5>
+                                                <small class="text-muted">USDT, USDC, DAI</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Криптовалюты, привязанные к доллару США. Курс практически
+                                            не меняется — удобно для платежей и сбережений.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 4: Преимущества и недостатки -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Плюсы и минусы криптовалют</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-plus-circle me-2"></i>Преимущества</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Низкие
+                                                комиссии за переводы</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Быстрые
+                                                международные переводы</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle text-success me-2"></i>Работают 24/7 без
+                                                выходных</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Полный
+                                                контроль над средствами</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle text-success me-2"></i>Прозрачность всех
+                                                операций</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Защита
+                                                от инфляции</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-danger h-100">
+                                    <div class="card-header bg-danger text-white">
+                                        <h5 class="mb-0"><i class="bi bi-dash-circle me-2"></i>Недостатки</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Высокая
+                                                волатильность курса</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Сложность
+                                                для новичков</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-x-circle text-danger me-2"></i>Необратимость транзакций
+                                            </li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Риск потери
+                                                кошелька</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-x-circle text-danger me-2"></i>Неопределённость
+                                                регулирования</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>Ограниченное
+                                                принятие в магазинах</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 5: Как получить криптовалюту -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как получить криптовалюту</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-shop text-primary fs-1 mb-3"></i>
+                                        <h5>Купить на бирже</h5>
+                                        <p class="text-muted">Зарегистрируйтесь на криптобирже (Binance, Coinbase) и
+                                            купите за обычные деньги</p>
+                                        <small class="text-success">Самый простой способ</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-warning">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-cpu text-warning fs-1 mb-3"></i>
+                                        <h5>Майнинг</h5>
+                                        <p class="text-muted">Используйте мощность компьютера для поддержки сети и
+                                            получайте вознаграждение</p>
+                                        <small class="text-warning">Требует техзнаний</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-info">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-gift text-info fs-1 mb-3"></i>
+                                        <h5>Получить в подарок</h5>
+                                        <p class="text-muted">Друзья могут отправить вам криптовалюту на ваш кошелёк</p>
+                                        <small class="text-info">Удобно для первого опыта</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-briefcase text-success fs-1 mb-3"></i>
+                                        <h5>Заработать</h5>
+                                        <p class="text-muted">Получайте зарплату в криптовалюте или продавайте
+                                            товары/услуги за крипту</p>
+                                        <small class="text-success">Растущий тренд</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 6: Безопасность -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Основы безопасности</h2>
+
+                        <div class="alert alert-danger border-0 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-shield-exclamation me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">Золотое правило</h6>
+                                    <p class="mb-0">Никогда не сообщайте никому свои приватные ключи или seed-фразу. Это
+                                        всё равно что дать пин-код от банковской карты.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-key-fill text-primary fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Храните ключи в безопасности</h6>
+                                        <small class="text-muted">Записывайте seed-фразу на бумаге, не храните в
+                                            телефоне</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-shield-check text-success fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Используйте надёжные кошельки</h6>
+                                        <small class="text-muted">Выбирайте проверенные решения с хорошей
+                                            репутацией</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-eye-slash text-warning fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Проверяйте адреса</h6>
+                                        <small class="text-muted">Всегда дважды проверяйте адрес получателя</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-wifi-off text-info fs-4 me-3 mt-1"></i>
+                                    <div>
+                                        <h6>Избегайте публичный Wi-Fi</h6>
+                                        <small class="text-muted">Не делайте переводы через открытые сети</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card bg-gradient text-dark border-0"
+                            style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">Главное о криптовалютах</h3>
+                                <p class="card-text">Криптовалюты — это новый тип денег, который даёт больше свободы и
+                                    контроля над финансами. Они работают на основе блокчейн-технологии и не зависят от
+                                    банков, но требуют от пользователей большей ответственности и знаний.</p>
+                                <p class="card-text mb-0"><strong>Следующий шаг:</strong> изучите, что такое токены и
+                                    чем они отличаются от обычных криптовалют.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Crypto Guide CH. Образовательный проект.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -32,19 +32,6 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Хлебные крошки */
-.breadcrumb {
-  background: none;
-  padding: 0;
-  margin: 0;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "›";
-  font-weight: 600;
-  color: var(--secondary-color);
-}
-
 /* Заголовки */
 h1, h2, h3, h4, h5, h6 {
   color: #212529;
