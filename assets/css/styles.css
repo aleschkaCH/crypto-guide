@@ -1,5 +1,3 @@
-/* /assets/css/styles.css  */
-
 /* /assets/css/styles.css */
 
 /* Основные стили */
@@ -18,19 +16,20 @@ body {
   color: #333;
 }
 
-/* Навигация */
+/* Навигация и шапка */
 .navbar-brand {
   font-size: 1.5rem;
+  color: #212529 !important;
+  display: flex;
+  align-items: center;
 }
 
-.navbar-nav .nav-link {
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
+.navbar-brand:hover {
+  color: #0088cc !important;
 }
 
-.navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Хлебные крошки */
@@ -223,6 +222,21 @@ html {
   
   .d-flex.flex-column.flex-md-row {
     gap: 1rem;
+  }
+  
+  /* Мобильная навигация между статьями */
+  .d-grid.gap-2.d-md-flex .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  /* Адаптивные кнопки */
+  .btn {
+    min-height: 44px; /* Минимальная высота для touch-friendly интерфейса */
   }
 }
 

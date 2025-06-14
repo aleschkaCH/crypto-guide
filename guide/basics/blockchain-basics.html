@@ -20,36 +20,19 @@
 </head>
 
 <body>
-    <!-- Навигация -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../../index.html">
-                <i class="bi bi-currency-bitcoin text-warning"></i>
-                Крипто Гид
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Главная</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
-                            Основы
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item active" href="blockchain-basics.html">Что такое блокчейн</a>
-                            </li>
-                            <li><a class="dropdown-item" href="cryptocurrency-basics.html">Основы криптовалют</a></li>
-                            <li><a class="dropdown-item" href="wallets-guide.html">Криптокошельки</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Хлебные крошки -->
     <div class="container mt-3">
@@ -289,17 +272,17 @@
 
                 <!-- Навигация между статьями -->
                 <nav class="mt-5 pt-4 border-top">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="../../index.html" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-left"></i> Назад к главной
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-md-end">
-                            <a href="cryptocurrency-basics.html" class="btn btn-primary">
-                                Основы криптовалют <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <a href="../../index.html" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i>
+                            <span class="d-none d-sm-inline">Назад к главной</span>
+                            <span class="d-sm-none">Главная</span>
+                        </a>
+                        <a href="cryptocurrency-basics.html" class="btn btn-primary">
+                            <span class="d-none d-sm-inline">Основы криптовалют</span>
+                            <span class="d-sm-none">Далее</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -311,7 +294,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-muted">&copy; 2025 Крипто Гид. Образовательный проект.</p>
+                    <p class="mb-0 text-muted">&copy; 2025 Crypto Guide CH. Образовательный проект.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <small class="text-muted">Материал носит исключительно образовательный характер</small>
