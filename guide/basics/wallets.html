@@ -1,0 +1,504 @@
+<!-- /guide/basics/wallets.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криптокошельки | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полное руководство по криптокошелькам. Узнайте о типах кошельков, их безопасности, как выбрать и настроить кошелек.">
+    <meta name="keywords"
+        content="криптокошелек, Bitcoin кошелек, Ethereum кошелек, seed фраза, приватные ключи, MetaMask, Ledger">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок статьи -->
+                <header class="mb-5 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Криптокошельки</h1>
+                    <p class="lead text-muted">Ваш цифровой сейф для хранения и управления криптовалютами</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                        <span class="badge bg-light text-dark">Время чтения: 12 минут</span>
+                        <span class="badge bg-primary">Уровень: Начинающий</span>
+                    </div>
+                </header>
+
+                <!-- Содержание -->
+                <article>
+                    <!-- Введение -->
+                    <div class="alert alert-info border-0 mb-5">
+                        <div class="d-flex">
+                            <i class="bi bi-info-circle-fill me-3 mt-1"></i>
+                            <div>
+                                <h5 class="alert-heading">Быстрый ответ</h5>
+                                <p class="mb-0">Криптокошелёк — это программа или устройство для хранения ваших
+                                    приватных ключей. Он не хранит сами монеты (они в блокчейне), а даёт вам доступ к
+                                    управлению ими.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Раздел 1: Как работает кошелёк -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как работает криптокошелёк</h2>
+
+                        <div class="bg-light p-4 rounded-3 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-key fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">Приватный ключ</h6>
+                                    <small class="text-muted">Секретный код доступа</small>
+                                </div>
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-success text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-house fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">Публичный адрес</h6>
+                                    <small class="text-muted">Ваш адрес для переводов</small>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="bg-warning text-white rounded-circle mx-auto d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="bi bi-wallet2 fs-3"></i>
+                                    </div>
+                                    <h6 class="mt-2">Кошелёк</h6>
+                                    <small class="text-muted">Интерфейс управления</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning border-0">
+                            <div class="d-flex">
+                                <i class="bi bi-exclamation-triangle-fill me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">Важно понимать</h6>
+                                    <p class="mb-0">Криптовалюты никогда не покидают блокчейн. Кошелёк просто хранит
+                                        ключи, которые доказывают, что эти монеты принадлежат вам.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 2: Типы кошельков -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Типы криптокошельков</h2>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-wifi-off me-2"></i>Холодные кошельки</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-success">Максимальная безопасность</h6>
+                                        <p class="text-muted">Не подключены к интернету. Идеальны для долгосрочного
+                                            хранения больших сумм.</p>
+
+                                        <div class="mb-3">
+                                            <strong>Аппаратные кошельки:</strong>
+                                            <ul class="list-unstyled ms-3">
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Ledger Nano S/X
+                                                </li>
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Trezor One/Model
+                                                    T</li>
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>SafePal S1</li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <strong>Бумажные кошельки:</strong>
+                                            <ul class="list-unstyled ms-3">
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Ключи на бумаге
+                                                </li>
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>QR-коды</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-header bg-warning text-white">
+                                        <h5 class="mb-0"><i class="bi bi-wifi me-2"></i>Горячие кошельки</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-warning">Удобство использования</h6>
+                                        <p class="text-muted">Подключены к интернету. Удобны для частых операций и
+                                            небольших сумм.</p>
+
+                                        <div class="mb-3">
+                                            <strong>Мобильные приложения:</strong>
+                                            <ul class="list-unstyled ms-3">
+                                                <li><i class="bi bi-check-circle text-warning me-2"></i>Trust Wallet
+                                                </li>
+                                                <li><i class="bi bi-check-circle text-warning me-2"></i>Coinbase Wallet
+                                                </li>
+                                                <li><i class="bi bi-check-circle text-warning me-2"></i>Telegram Wallet
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <strong>Браузерные расширения:</strong>
+                                            <ul class="list-unstyled ms-3">
+                                                <li><i class="bi bi-check-circle text-warning me-2"></i>MetaMask</li>
+                                                <li><i class="bi bi-check-circle text-warning me-2"></i>Phantom</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 3: Сравнение кошельков -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Сравнение типов кошельков</h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Тип</th>
+                                        <th>Безопасность</th>
+                                        <th>Удобство</th>
+                                        <th>Стоимость</th>
+                                        <th>Для кого</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Аппаратный</strong></td>
+                                        <td><span class="badge bg-success">Очень высокая</span></td>
+                                        <td><span class="badge bg-warning">Средняя</span></td>
+                                        <td>$50-200</td>
+                                        <td>Серьёзные инвесторы</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Мобильный</strong></td>
+                                        <td><span class="badge bg-warning">Средняя</span></td>
+                                        <td><span class="badge bg-success">Высокая</span></td>
+                                        <td>Бесплатно</td>
+                                        <td>Ежедневное использование</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Браузерный</strong></td>
+                                        <td><span class="badge bg-warning">Средняя</span></td>
+                                        <td><span class="badge bg-success">Высокая</span></td>
+                                        <td>Бесплатно</td>
+                                        <td>DeFi и DApps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Биржевой</strong></td>
+                                        <td><span class="badge bg-danger">Низкая</span></td>
+                                        <td><span class="badge bg-success">Очень высокая</span></td>
+                                        <td>Бесплатно</td>
+                                        <td>Новички (временно)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 4: Seed-фраза -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Seed-фраза — ваш мастер-ключ</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Что это такое</h5>
+                                        <p class="text-muted">Seed-фраза — это 12 или 24 слова на английском языке, из
+                                            которых генерируются все ваши приватные ключи.</p>
+
+                                        <div class="bg-light p-3 rounded">
+                                            <small class="text-muted">Пример seed-фразы:</small>
+                                            <div class="font-monospace small mt-1">
+                                                witch collapse practice feed shame <br>
+                                                open despair creek road again <br>
+                                                ice least
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-danger h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-danger">Правила безопасности</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i
+                                                    class="bi bi-shield-check text-success me-2"></i>Запишите на бумаге
+                                            </li>
+                                            <li class="mb-2"><i class="bi bi-shield-check text-success me-2"></i>Храните
+                                                в сейфе</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-shield-check text-success me-2"></i>Сделайте несколько
+                                                копий</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>НЕ
+                                                фотографируйте</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>НЕ
+                                                сохраняйте в телефоне</li>
+                                            <li class="mb-2"><i class="bi bi-x-circle text-danger me-2"></i>НЕ
+                                                отправляйте по почте</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-danger border-0 mt-4">
+                            <div class="d-flex">
+                                <i class="bi bi-shield-exclamation me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="alert-heading">КРИТИЧЕСКИ ВАЖНО</h6>
+                                    <p class="mb-0">Тот, кто знает вашу seed-фразу, полностью контролирует ваши
+                                        средства. Никогда никому её не сообщайте!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 5: Популярные кошельки -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Рекомендуемые кошельки</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-shield-check"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Ledger Nano X</h5>
+                                                <small class="text-muted">Аппаратный кошелёк</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Самый безопасный способ хранения. Поддерживает 5500+
+                                            криптовалют, Bluetooth, экран.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Цена: ~$149</span>
+                                            <span class="text-success">★★★★★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-phone"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Trust Wallet</h5>
+                                                <small class="text-muted">Мобильное приложение</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Популярный мобильный кошелёк от Binance. Поддерживает
+                                            множество сетей, DApps, NFT.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-primary">Бесплатно</span>
+                                            <span class="text-primary">★★★★☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-browser-chrome"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">MetaMask</h5>
+                                                <small class="text-muted">Браузерное расширение</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Стандарт для Ethereum и EVM-сетей. Необходим для
+                                            большинства DeFi приложений.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-warning">Бесплатно</span>
+                                            <span class="text-warning">★★★★☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 50px; height: 50px;">
+                                                <i class="bi bi-telegram"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Telegram Wallet</h5>
+                                                <small class="text-muted">Встроенный в Telegram</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Удобен для TON экосистемы. Интегрирован в мессенджер,
+                                            простая отправка между пользователями.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-info">Бесплатно</span>
+                                            <span class="text-info">★★★☆☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 6: Первые шаги -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как настроить первый кошелёк</h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Для новичков</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ol class="mb-0">
+                                            <li class="mb-2">Скачайте Trust Wallet из официального магазина</li>
+                                            <li class="mb-2">Создайте новый кошелёк</li>
+                                            <li class="mb-2">Запишите seed-фразу на бумаге</li>
+                                            <li class="mb-2">Проверьте фразу, введя её заново</li>
+                                            <li class="mb-2">Начните с небольших сумм</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-primary h-100">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0">Для опытных</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ol class="mb-0">
+                                            <li class="mb-2">Купите аппаратный кошелёк Ledger</li>
+                                            <li class="mb-2">Настройте его по инструкции</li>
+                                            <li class="mb-2">Сохраните seed-фразу в сейфе</li>
+                                            <li class="mb-2">Установите приложения нужных сетей</li>
+                                            <li class="mb-2">Переводите крупные суммы сюда</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 7: Ошибки новичков -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Частые ошибки и как их избежать</h2>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="alert alert-danger border-0">
+                                    <h6 class="alert-heading"><i class="bi bi-x-circle me-2"></i>Неправильно</h6>
+                                    <ul class="mb-0 small">
+                                        <li>Хранить криптовалюту на бирже постоянно</li>
+                                        <li>Сохранять seed-фразу в заметках телефона</li>
+                                        <li>Использовать один кошелёк для всех сетей</li>
+                                        <li>Не проверять адрес при переводе</li>
+                                        <li>Скачивать кошельки с неофициальных сайтов</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-success border-0">
+                                    <h6 class="alert-heading"><i class="bi bi-check-circle me-2"></i>Правильно</h6>
+                                    <ul class="mb-0 small">
+                                        <li>Переводить средства в собственный кошелёк</li>
+                                        <li>Записывать фразу на бумаге или металле</li>
+                                        <li>Использовать разные кошельки для разных целей</li>
+                                        <li>Всегда дважды проверять адреса</li>
+                                        <li>Скачивать только с официальных источников</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card bg-gradient text-dark border-0"
+                            style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">Главное о кошельках</h3>
+                                <p class="card-text">Выбор кошелька зависит от ваших целей: аппаратный для больших сумм,
+                                    мобильный для повседневных трат, браузерный для DeFi. Главное — никогда не делитесь
+                                    своей seed-фразой и всегда проверяйте адреса при переводах.</p>
+                                <p class="card-text mb-0"><strong>Следующий шаг:</strong> изучите смарт-контракты —
+                                    программы, которые автоматически выполняют условия соглашений.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Crypto Guide CH. Образовательный проект.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>
