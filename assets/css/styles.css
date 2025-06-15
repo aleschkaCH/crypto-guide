@@ -247,3 +247,8 @@ html {
     padding: 0;
   }
 }
+
+/* Мелкий текст для подвала */
+.extra-small {
+  font-size: 0.7rem;
+}
