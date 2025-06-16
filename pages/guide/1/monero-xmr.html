@@ -1,0 +1,828 @@
+<!-- /pages/guide/1/monero-xmr.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monero (XMR) — Приватная криптовалюта | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полное руководство по Monero (XMR) — самой популярной приватной криптовалюте. Технологии анонимности, майнинг, кошельки и практическое применение.">
+    <meta name="keywords"
+        content="Monero, XMR, приватная криптовалюта, анонимность, Ring Signatures, CryptoNote, майнинг, конфиденциальность">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок -->
+                <header class="mb-5 text-center">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <img src="../../../assets/img/coin/XMR.png" alt="Monero" class="rounded-circle me-3" width="48"
+                            height="48" style="object-fit: cover;">
+                        <h1 class="display-4 fw-bold mb-0">Monero (XMR)</h1>
+                    </div>
+                    <p class="lead text-muted">Самая популярная приватная криптовалюта с полной анонимностью транзакций
+                    </p>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 mb-5">
+                    <h5 class="alert-heading"><i class="bi bi-lightbulb-fill me-2"></i>Быстрый ответ</h5>
+                    <p class="mb-0">
+                        <strong>Monero (XMR)</strong> — это приватная криптовалюта, которая полностью скрывает
+                        отправителя, получателя и сумму транзакции. Использует технологии Ring Signatures,
+                        Stealth Addresses и RingCT для обеспечения анонимности. Добывается на обычных процессорах
+                        и видеокартах, что делает майнинг доступным для домашних пользователей.
+                    </p>
+                </div>
+
+                <!-- Основная статья -->
+                <article>
+                    <!-- Что такое Monero -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-shield-lock text-primary me-2"></i>
+                                    Что такое Monero?
+                                </h2>
+                                <p class="card-text">
+                                    Monero — это децентрализованная криптовалюта, запущенная в 2014 году, которая
+                                    фокусируется на приватности, децентрализации и масштабируемости. В отличие от
+                                    Bitcoin и Ethereum, где все транзакции публичны и могут быть отслежены,
+                                    Monero обеспечивает полную конфиденциальность операций.
+                                </p>
+                                <p class="card-text">
+                                    Название "Monero" происходит от языка эсперанто и означает "монета" или "деньги".
+                                    Протокол основан на алгоритме CryptoNote, который кардинально отличается от
+                                    архитектуры Bitcoin.
+                                </p>
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h6 mb-3 text-success">
+                                                <i class="bi bi-check-circle me-2"></i>Основные характеристики
+                                            </h4>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-arrow-right text-primary me-2"></i>
+                                                    Запуск: 18 апреля 2014 года
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-arrow-right text-primary me-2"></i>
+                                                    Алгоритм: RandomX (CPU-майнинг)
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-arrow-right text-primary me-2"></i>
+                                                    Время блока: ~2 минуты
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-arrow-right text-primary me-2"></i>
+                                                    Эмиссия: tail emission 0.6 XMR/блок
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h6 mb-3 text-warning">
+                                                <i class="bi bi-info-circle me-2"></i>Ключевые особенности
+                                            </h4>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-eye-slash text-primary me-2"></i>
+                                                    Полная приватность по умолчанию
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-cpu text-primary me-2"></i>
+                                                    ASIC-устойчивый алгоритм
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-graph-up text-primary me-2"></i>
+                                                    Динамический размер блоков
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-people text-primary me-2"></i>
+                                                    Активное комьюнити разработчиков
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Технологии приватности -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-gear-fill text-primary me-2"></i>
+                                    Технологии приватности
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Monero использует несколько криптографических технологий для обеспечения полной
+                                    анонимности транзакций. Каждая технология скрывает определенный аспект операции.
+                                </p>
+
+                                <div class="row">
+                                    <!-- Ring Signatures -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-people-fill text-primary me-2"></i>
+                                                Ring Signatures
+                                            </h4>
+                                            <p class="mb-3">
+                                                Скрывает отправителя транзакции, смешивая его подпись с подписями
+                                                других пользователей (decoys).
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Невозможно определить реального отправителя
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Размер кольца: 11 подписей
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Автоматически для всех транзакций
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stealth Addresses -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-eye-slash-fill text-success me-2"></i>
+                                                Stealth Addresses
+                                            </h4>
+                                            <p class="mb-3">
+                                                Скрывает получателя, создавая уникальный одноразовый адрес
+                                                для каждой транзакции.
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Публичные адреса не связаны с транзакциями
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Каждая операция использует новый адрес
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Невозможно отследить баланс
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- RingCT -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-currency-dollar text-warning me-2"></i>
+                                                Ring Confidential Transactions
+                                            </h4>
+                                            <p class="mb-3">
+                                                Скрывает суммы транзакций, показывая только то, что входы
+                                                равны выходам без раскрытия точных значений.
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Суммы полностью скрыты
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Математически доказуемая корректность
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Предотвращает инфляцию
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dandelion++ -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-globe text-info me-2"></i>
+                                                Dandelion++
+                                            </h4>
+                                            <p class="mb-3">
+                                                Защищает метаданные сети, скрывая IP-адреса пользователей
+                                                на уровне распространения транзакций.
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Скрытие источника транзакции
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Двухфазное распространение
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Защита от анализа сетевого трафика
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Майнинг Monero -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-cpu-fill text-primary me-2"></i>
+                                    Майнинг Monero
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Monero использует алгоритм RandomX, специально разработанный для CPU-майнинга.
+                                    Это делает сеть более децентрализованной и доступной для обычных пользователей.
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-success bg-opacity-10 rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-plus-circle text-success me-2"></i>
+                                                Преимущества RandomX
+                                            </h4>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-cpu text-success me-2"></i>
+                                                    ASIC-устойчивость
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-house text-success me-2"></i>
+                                                    Доступность домашнего майнинга
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-globe text-success me-2"></i>
+                                                    Большая децентрализация
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-lightning text-success me-2"></i>
+                                                    Энергоэффективность
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-graph-up text-success me-2"></i>
+                                                    Стабильная сложность
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-gear text-primary me-2"></i>
+                                                Особенности майнинга
+                                            </h4>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2">
+                                                    <strong>Оборудование:</strong> CPU (лучше всего AMD Ryzen)
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Пулы:</strong> SupportXMR, MineXMR, Nanopool
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Софт:</strong> XMRig, XMR-Stak
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Доходность:</strong> ~$1-5/день на Ryzen 9
+                                                </li>
+                                                <li>
+                                                    <strong>Сложность:</strong> автоматическая корректировка
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Кошельки и использование -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-wallet2 text-primary me-2"></i>
+                                    Кошельки и использование
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Для работы с Monero существует множество кошельков с разными уровнями безопасности
+                                    и функциональности. Выбор зависит от ваших потребностей в приватности и удобстве.
+                                </p>
+
+                                <div class="row">
+                                    <!-- Официальные кошельки -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-shield-check text-primary me-2"></i>
+                                                Официальные кошельки
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <strong>Monero GUI:</strong> полноценный клиент с интерфейсом
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Monero CLI:</strong> командная строка для продвинутых
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Особенности:</strong> полная синхронизация блокчейна
+                                                </li>
+                                                <li>
+                                                    <strong>Размер:</strong> ~150 ГБ данных
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Мобильные кошельки -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-phone text-success me-2"></i>
+                                                Мобильные кошельки
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <strong>Monerujo:</strong> Android кошелек
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Cake Wallet:</strong> iOS и Android
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>MyMonero:</strong> веб-кошелек
+                                                </li>
+                                                <li>
+                                                    <strong>Особенности:</strong> легкие клиенты, быстрая синхронизация
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Аппаратные кошельки -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-shield-fill text-warning me-2"></i>
+                                                Аппаратные кошельки
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <strong>Ledger:</strong> Nano S/X поддерживают XMR
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Trezor:</strong> ограниченная поддержка
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Особенности:</strong> холодное хранение
+                                                </li>
+                                                <li>
+                                                    <strong>Требования:</strong> использование с GUI кошельком
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Практические советы -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-info bg-opacity-10 rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-lightbulb text-info me-2"></i>
+                                                Практические советы
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Сохраните seed фразу (25 слов)
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Используйте подадреса для приватности
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Проверяйте адреса получателей
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check text-success me-2"></i>
+                                                    Регулярно обновляйте кошелек
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Сравнение с другими приватными монетами -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-bar-chart text-primary me-2"></i>
+                                    Сравнение с другими приватными криптовалютами
+                                </h2>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Характеристика</th>
+                                                <th>Monero (XMR)</th>
+                                                <th>Zcash (ZEC)</th>
+                                                <th>Dash (DASH)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Приватность по умолчанию</strong></td>
+                                                <td><span class="badge bg-success">100%</span></td>
+                                                <td><span class="badge bg-warning">Опционально</span></td>
+                                                <td><span class="badge bg-warning">Опционально</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Технология приватности</strong></td>
+                                                <td>Ring Signatures + RingCT</td>
+                                                <td>zk-SNARKs</td>
+                                                <td>CoinJoin (PrivateSend)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Размер транзакции</strong></td>
+                                                <td><span class="badge bg-warning">~2-3 КБ</span></td>
+                                                <td><span class="badge bg-danger">~2.5 КБ</span></td>
+                                                <td><span class="badge bg-success">~0.5 КБ</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Время подтверждения</strong></td>
+                                                <td>~2 минуты</td>
+                                                <td>~2.5 минуты</td>
+                                                <td>~2.5 минуты</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>ASIC-устойчивость</strong></td>
+                                                <td><span class="badge bg-success">Да</span></td>
+                                                <td><span class="badge bg-danger">Нет</span></td>
+                                                <td><span class="badge bg-danger">Нет</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Аудируемость</strong></td>
+                                                <td><span class="badge bg-warning">Ограниченная</span></td>
+                                                <td><span class="badge bg-success">Возможна</span></td>
+                                                <td><span class="badge bg-success">Полная</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Применение и экосистема -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-diagram-3 text-primary me-2"></i>
+                                    Применение и экосистема
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Monero находит применение в различных сферах, где важна финансовая приватность.
+                                    Экосистема постоянно развивается, предлагая новые решения и сервисы.
+                                </p>
+
+                                <div class="row">
+                                    <!-- Основные применения -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-people text-primary me-2"></i>
+                                                Основные применения
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-shield text-success me-2"></i>
+                                                    Защита финансовой приватности
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-globe text-success me-2"></i>
+                                                    Международные переводы
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-building text-success me-2"></i>
+                                                    Корпоративные платежи
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-heart text-success me-2"></i>
+                                                    Благотворительность
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-shop text-success me-2"></i>
+                                                    Анонимные покупки
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Экосистема -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-layers text-warning me-2"></i>
+                                                Экосистема
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <strong>Биржи:</strong> Binance, Kraken, Poloniex
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>DEX:</strong> AtomicDEX, TradeOgre
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Атомные свопы:</strong> с Bitcoin
+                                                </li>
+                                                <li class="mb-2">
+                                                    <strong>Платежи:</strong> XMR.to (закрыт), Now Payments
+                                                </li>
+                                                <li>
+                                                    <strong>Инструменты:</strong> монеро-калькуляторы, эксплореры
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Регулирование и риски -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-exclamation-triangle text-warning me-2"></i>
+                                    Регулирование и риски
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Приватные криптовалюты вызывают особое внимание регуляторов. Важно понимать
+                                    правовые аспекты и потенциальные риски использования Monero.
+                                </p>
+
+                                <div class="row">
+                                    <!-- Регулятивные риски -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-warning bg-opacity-10 rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-exclamation-circle text-warning me-2"></i>
+                                                Регулятивные риски
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-x-circle text-danger me-2"></i>
+                                                    Делистинг с централизованных бирж
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-x-circle text-danger me-2"></i>
+                                                    Запрет в некоторых юрисдикциях
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-x-circle text-danger me-2"></i>
+                                                    Ограничения банковских переводов
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-x-circle text-danger me-2"></i>
+                                                    Налоговые сложности
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-x-circle text-danger me-2"></i>
+                                                    Повышенное внимание властей
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Технические риски -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-danger bg-opacity-10 rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-bug text-danger me-2"></i>
+                                                Технические риски
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-clock text-warning me-2"></i>
+                                                    Длительная синхронизация кошелька
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-hdd text-warning me-2"></i>
+                                                    Большой размер блокчейна
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-currency-dollar text-warning me-2"></i>
+                                                    Высокие комиссии за транзакции
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-graph-down text-warning me-2"></i>
+                                                    Волатильность курса
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-shield text-warning me-2"></i>
+                                                    Потенциальные уязвимости в криптографии
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Правовая информация -->
+                                <div class="alert alert-warning border-0 mt-4">
+                                    <h5 class="alert-heading">
+                                        <i class="bi bi-info-circle me-2"></i>Важная правовая информация
+                                    </h5>
+                                    <p class="mb-0">
+                                        Использование приватных криптовалют может быть ограничено или запрещено
+                                        в вашей юрисдикции. Всегда изучайте местное законодательство и
+                                        консультируйтесь с юристами перед использованием Monero.
+                                        Соблюдайте налоговые обязательства в вашей стране.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Будущее развитие -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-rocket text-primary me-2"></i>
+                                    Будущее развитие
+                                </h2>
+                                <p class="card-text mb-4">
+                                    Команда разработчиков Monero постоянно работает над улучшением протокола,
+                                    повышением эффективности и внедрением новых технологий приватности.
+                                </p>
+
+                                <div class="row">
+                                    <!-- Текущие разработки -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-gear text-primary me-2"></i>
+                                                Текущие разработки
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-lightning text-warning me-2"></i>
+                                                    <strong>Seraphis:</strong> новый протокол транзакций
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-speedometer text-success me-2"></i>
+                                                    <strong>Jamtis:</strong> улучшенные адреса
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-cpu text-info me-2"></i>
+                                                    <strong>FCMP++:</strong> более эффективные доказательства
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-shield text-primary me-2"></i>
+                                                    <strong>Triptych:</strong> альтернативные ring signatures
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Долгосрочные цели -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-target text-success me-2"></i>
+                                                Долгосрочные цели
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-graph-up text-success me-2"></i>
+                                                    Улучшение масштабируемости
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-download text-success me-2"></i>
+                                                    Уменьшение размера транзакций
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-phone text-success me-2"></i>
+                                                    Развитие мобильной экосистемы
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-globe text-success me-2"></i>
+                                                    Повышение удобства использования
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-check-circle text-success me-2"></i>
+                                    Заключение
+                                </h2>
+                                <p class="card-text">
+                                    Monero представляет собой уникальную криптовалюту, которая ставит приватность
+                                    на первое место. Благодаря сочетанию передовых криптографических технологий,
+                                    XMR обеспечивает полную конфиденциальность транзакций по умолчанию.
+                                </p>
+                                <p class="card-text">
+                                    ASIC-устойчивый алгоритм RandomX делает майнинг доступным для обычных
+                                    пользователей, что способствует децентрализации сети. Активное комьюнити
+                                    разработчиков постоянно совершенствует протокол, внедряя новые технологии
+                                    и улучшения.
+                                </p>
+                                <p class="card-text">
+                                    Однако важно помнить о регулятивных рисках и правовых ограничениях.
+                                    Приватные криптовалюты привлекают повышенное внимание регуляторов,
+                                    что может повлиять на их доступность и использование в будущем.
+                                </p>
+                                <p class="card-text mb-0">
+                                    Monero остается ведущей приватной криптовалютой и важным элементом
+                                    криптоэкосистемы для тех, кто ценит финансовую конфиденциальность
+                                    и цифровые права человека.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
