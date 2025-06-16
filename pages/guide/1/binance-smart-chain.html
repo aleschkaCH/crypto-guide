@@ -1,0 +1,541 @@
+<!-- /pages/guide/1/binance-smart-chain.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Smart Chain (BSC/BNB) | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полное руководство по Binance Smart Chain: особенности, преимущества, экосистема DeFi, настройка MetaMask и практические советы по использованию BSC.">
+    <meta name="keywords"
+        content="Binance Smart Chain, BSC, BNB, BEP-20, PancakeSwap, DeFi, MetaMask, комиссии, Binance, блокчейн">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок -->
+                <header class="mb-5 text-center">
+                    <div class="mb-4">
+                        <img src="../../../assets/img/coin/BNB.png" alt="Binance Smart Chain"
+                            class="rounded-circle border border-warning"
+                            style="width: 80px; height: 80px; object-fit: cover;">
+                    </div>
+                    <h1 class="display-4 fw-bold mb-3">Binance Smart Chain (BSC/BNB)</h1>
+                    <p class="lead text-muted">Быстрая и доступная блокчейн-сеть для DeFi и смарт-контрактов</p>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 mb-5">
+                    <h5 class="alert-heading"><i class="bi bi-lightbulb-fill me-2"></i>Быстрый ответ</h5>
+                    <p class="mb-0">
+                        <strong>Binance Smart Chain (BSC)</strong> — это блокчейн-сеть, совместимая с Ethereum,
+                        но с низкими комиссиями (~$0.1-1) и высокой скоростью (3 секунды). Использует токен
+                        <strong>BNB</strong> для оплаты комиссий. Идеальна для DeFi, торговли токенами и
+                        экспериментов с небольшими суммами.
+                    </p>
+                </div>
+
+                <!-- Статья -->
+                <article>
+                    <!-- Что такое BSC -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Что такое Binance Smart Chain?</h2>
+
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Binance Smart Chain (BSC) — это блокчейн-платформа, запущенная биржей Binance
+                                    в 2020 году как альтернатива Ethereum с более низкими комиссиями. BSC работает
+                                    параллельно с Binance Chain, объединяя быстроту первой и программируемость второй.
+                                </p>
+
+                                <div class="row g-3 mt-3">
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <h5 class="text-warning mb-2">~$0.3</h5>
+                                            <small class="text-muted">Средняя комиссия</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <h5 class="text-success mb-2">3 сек</h5>
+                                            <small class="text-muted">Время блока</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <h5 class="text-primary mb-2">21</h5>
+                                            <small class="text-muted">Валидаторов</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ключевые особенности -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Ключевые особенности BSC</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-speedometer me-2"></i>Низкие комиссии</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Транзакции в BSC стоят в 50-100 раз дешевле Ethereum. Обычный перевод
+                                            BEP-20 токена обходится в $0.1-0.5, а сложные DeFi операции — $1-3.
+                                        </p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="bi bi-check-circle text-success me-2"></i>Простой перевод:
+                                                ~$0.20</li>
+                                            <li><i class="bi bi-check-circle text-success me-2"></i>Обмен на DEX: ~$0.50
+                                            </li>
+                                            <li><i class="bi bi-check-circle text-success me-2"></i>Стейкинг: ~$1.00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0"><i class="bi bi-lightning me-2"></i>Высокая скорость</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            BSC обрабатывает транзакции за 3 секунды благодаря алгоритму
+                                            консенсуса Proof of Staked Authority (PoSA) с 21 валидатором.
+                                        </p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="bi bi-clock text-primary me-2"></i>Время блока: 3 сек</li>
+                                            <li><i class="bi bi-graph-up text-primary me-2"></i>TPS: ~300</li>
+                                            <li><i class="bi bi-shield-check text-primary me-2"></i>Финальность: ~15 сек
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5 class="mb-0"><i class="bi bi-code-square me-2"></i>Совместимость с Ethereum</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        BSC полностью совместима с Ethereum Virtual Machine (EVM), что означает:
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-arrow-right text-warning me-2"></i>Смарт-контракты
+                                                    из Ethereum работают без изменений</li>
+                                                <li><i class="bi bi-arrow-right text-warning me-2"></i>Можно
+                                                    использовать MetaMask и другие Ethereum-кошельки</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-arrow-right text-warning me-2"></i>Разработчики
+                                                    легко портируют DApps</li>
+                                                <li><i class="bi bi-arrow-right text-warning me-2"></i>Поддержка
+                                                    стандарта BEP-20 (аналог ERC-20)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Токен BNB -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Токен BNB и его роль</h2>
+
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="../../../assets/img/coin/BNB.png" alt="BNB" class="rounded-circle me-3"
+                                        style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h5 class="mb-1">BNB (Build and Build)</h5>
+                                        <small class="text-muted">Нативный токен Binance Smart Chain</small>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold mb-3">Функции BNB в экосистеме:</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-start">
+                                            <i class="bi bi-fuel-pump text-warning fs-5 me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Газ для транзакций</strong>
+                                                <p class="text-muted small mb-0">Все комиссии в BSC оплачиваются в BNB
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-start">
+                                            <i class="bi bi-shield-lock text-success fs-5 me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Стейкинг</strong>
+                                                <p class="text-muted small mb-0">Делегирование BNB валидаторам за
+                                                    вознаграждения</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-start">
+                                            <i class="bi bi-percent text-primary fs-5 me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Скидки на Binance</strong>
+                                                <p class="text-muted small mb-0">Снижение торговых комиссий до 25%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-start">
+                                            <i class="bi bi-fire text-danger fs-5 me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Сжигание токенов</strong>
+                                                <p class="text-muted small mb-0">Ежеквартальное сокращение предложения
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Экосистема DeFi -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Экосистема BSC</h2>
+
+                        <div class="alert alert-light border-start border-4 border-info">
+                            <h6 class="fw-bold">🌟 Популярные проекты в BSC:</h6>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-gradient"
+                                        style="background: linear-gradient(45deg, #1fc7d4, #7645d9);">
+                                        <h6 class="text-white mb-0">PancakeSwap</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text small">
+                                            Крупнейший DEX на BSC. Обмен токенов, фарминг, лотерея и NFT-маркетплейс.
+                                        </p>
+                                        <span class="badge bg-info">DEX</span>
+                                        <span class="badge bg-success">Фарминг</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header" style="background-color: #ff6b35;">
+                                        <h6 class="text-white mb-0">Venus Protocol</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text small">
+                                            Протокол кредитования. Депозиты под проценты и займы под залог криптовалют.
+                                        </p>
+                                        <span class="badge bg-warning text-dark">Lending</span>
+                                        <span class="badge bg-secondary">Stablecoin</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-dark">
+                                        <h6 class="text-white mb-0">1inch Network</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text small">
+                                            DEX-агрегатор, находящий лучшие курсы обмена среди различных платформ BSC.
+                                        </p>
+                                        <span class="badge bg-primary">Агрегатор</span>
+                                        <span class="badge bg-info">Арбитраж</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header" style="background-color: #8247e5;">
+                                        <h6 class="text-white mb-0">BakerySwap</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text small">
+                                            Первый AMM на BSC с NFT-функциональностью и собственным токеном BAKE.
+                                        </p>
+                                        <span class="badge bg-purple text-white"
+                                            style="background-color: #8247e5 !important;">DEX</span>
+                                        <span class="badge bg-dark">NFT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Настройка MetaMask -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как подключить BSC к MetaMask</h2>
+
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text mb-4">
+                                    Для работы с BSC нужно добавить сеть в MetaMask с правильными параметрами:
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-bold">Название сети</td>
+                                                <td>Smart Chain</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">RPC URL</td>
+                                                <td><code>https://bsc-dataseed.binance.org/</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Chain ID</td>
+                                                <td>56</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Символ валюты</td>
+                                                <td>BNB</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Block Explorer</td>
+                                                <td><code>https://bscscan.com</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="alert alert-warning border-0 mt-3">
+                                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                    <strong>Важно:</strong> После добавления сети убедитесь, что у вас есть BNB для
+                                    оплаты комиссий.
+                                    Можете купить BNB на Binance и перевести в BSC-сеть.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Преимущества и недостатки -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Преимущества и недостатки BSC</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-check-circle me-2"></i>Преимущества</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-3">
+                                                <i class="bi bi-currency-dollar text-success me-2"></i>
+                                                <strong>Низкие комиссии</strong> — транзакции в 50-100 раз дешевле
+                                                Ethereum
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-2"></i>
+                                                <strong>Быстрота</strong> — подтверждение за 3 секунды
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-code-square text-success me-2"></i>
+                                                <strong>EVM-совместимость</strong> — легкая миграция с Ethereum
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-graph-up text-success me-2"></i>
+                                                <strong>Развитая экосистема</strong> — множество DeFi-проектов
+                                            </li>
+                                            <li class="mb-0">
+                                                <i class="bi bi-building text-success me-2"></i>
+                                                <strong>Поддержка Binance</strong> — крупнейшей криптобиржи
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-header bg-warning text-dark">
+                                        <h5 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Недостатки</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-3">
+                                                <i class="bi bi-building text-warning me-2"></i>
+                                                <strong>Централизация</strong> — только 21 валидатор, контроль Binance
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-shield-exclamation text-warning me-2"></i>
+                                                <strong>Меньшая безопасность</strong> — по сравнению с Ethereum и
+                                                Bitcoin
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-globe text-warning me-2"></i>
+                                                <strong>Регуляторные риски</strong> — зависимость от статуса Binance
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-bug text-warning me-2"></i>
+                                                <strong>Молодость сети</strong> — меньше тестирования временем
+                                            </li>
+                                            <li class="mb-0">
+                                                <i class="bi bi-people text-warning me-2"></i>
+                                                <strong>Меньшее сообщество</strong> — разработчиков по сравнению с
+                                                Ethereum
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Кому подходит BSC -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Кому подходит BSC?</h2>
+
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-person-plus-fill text-white fs-4"></i>
+                                            </div>
+                                            <h6 class="fw-bold">Новичкам</h6>
+                                            <p class="text-muted small">
+                                                Низкие комиссии позволяют экспериментировать и учиться с минимальными
+                                                потерями
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-graph-up text-white fs-4"></i>
+                                            </div>
+                                            <h6 class="fw-bold">DeFi-трейдерам</h6>
+                                            <p class="text-muted small">
+                                                Частые операции в DeFi протоколах становятся выгодными благодаря низким
+                                                комиссиям
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <div class="bg-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                                style="width: 60px; height: 60px;">
+                                                <i class="bi bi-speedometer2 text-white fs-4"></i>
+                                            </div>
+                                            <h6 class="fw-bold">Активным пользователям</h6>
+                                            <p class="text-muted small">
+                                                Быстрые транзакции подходят для арбитража и высокочастотных операций
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-info border-0 mt-4">
+                                    <h6 class="fw-bold mb-2">💡 Практический совет:</h6>
+                                    <p class="mb-0">
+                                        BSC отлично подходит как "тренировочная площадка" для изучения DeFi.
+                                        Начните с небольших сумм на PancakeSwap, изучите принципы работы AMM,
+                                        а затем переходите к более сложным стратегиям.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card border-0 bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-check2-circle text-success me-2"></i>Итоги</h5>
+                                <p class="card-text">
+                                    Binance Smart Chain занимает важное место в криптоэкосистеме как доступная
+                                    альтернатива Ethereum. Несмотря на компромиссы в децентрализации, BSC предлагает
+                                    практичное решение для ежедневного использования DeFi-приложений.
+                                </p>
+                                <p class="card-text mb-0">
+                                    Выбирайте BSC для экспериментов, обучения и активной торговли с небольшими суммами.
+                                    Для долгосрочного хранения крупных активов рассмотрите более децентрализованные
+                                    сети как Bitcoin или Ethereum.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
