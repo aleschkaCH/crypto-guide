@@ -1,0 +1,531 @@
+<!-- /pages/guide/1/ethereum.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum (ETH) - Полное руководство | Crypto Guide CH</title>
+    <meta name="description"
+        content="Изучаем Ethereum: что это такое, как работает, смарт-контракты, DeFi, NFT и почему ETH важен для криптомира. Полное руководство для новичков.">
+    <meta name="keywords"
+        content="Ethereum, ETH, смарт-контракты, DeFi, NFT, блокчейн, криптовалюта, Виталик Бутерин, газ, EIP-1559">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок -->
+                <header class="mb-5 text-center">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="../../../assets/img/coin/ETH.png" alt="Ethereum" class="rounded-circle me-3"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h1 class="display-4 fw-bold mb-0">Ethereum (ETH)</h1>
+                    </div>
+                    <p class="lead text-muted">Мировой компьютер для децентрализованных приложений</p>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 mb-5">
+                    <div class="d-flex">
+                        <i class="bi bi-lightbulb-fill me-3 mt-1"></i>
+                        <div>
+                            <h5 class="alert-heading">Быстрый ответ</h5>
+                            <p class="mb-0">
+                                <strong>Ethereum</strong> — это блокчейн-платформа для создания децентрализованных
+                                приложений (DApps)
+                                и смарт-контрактов. <strong>ETH</strong> — её нативная криптовалюта, используемая для
+                                оплаты
+                                транзакций и вычислений. Ethereum стал основой для DeFi, NFT и Web3, превратив блокчейн
+                                из простой системы платежей в программируемую платформу.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <article>
+                    <!-- Раздел 1: Что такое Ethereum -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Что такое Ethereum?</h2>
+
+                        <div class="card border-0 bg-light mb-4">
+                            <div class="card-body">
+                                <p class="card-text mb-3">
+                                    Если Bitcoin — это цифровое золото, то Ethereum — это мировой компьютер.
+                                    Эта платформа позволяет разработчикам создавать децентрализованные приложения,
+                                    которые работают точно по программе без возможности мошенничества, цензуры или
+                                    вмешательства третьих лиц.
+                                </p>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <i class="bi bi-calendar3 text-primary me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Запуск:</strong> 30 июля 2015 года<br>
+                                                <span class="text-muted small">9+ лет разработки и
+                                                    совершенствования</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <i class="bi bi-person-circle text-primary me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Создатель:</strong> Виталик Бутерин<br>
+                                                <span class="text-muted small">Российско-канадский программист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <i class="bi bi-gear text-primary me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Консенсус:</strong> Proof of Stake<br>
+                                                <span class="text-muted small">С сентября 2022 года</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <i class="bi bi-coin text-primary me-3 mt-1"></i>
+                                            <div>
+                                                <strong>Эмиссия:</strong> ~120 млн ETH<br>
+                                                <span class="text-muted small">Без жёсткого лимита</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 2: Как работает Ethereum -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Как работает Ethereum?</h2>
+
+                        <div class="accordion" id="howItWorksAccordion">
+                            <!-- Виртуальная машина Ethereum -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#evm" aria-expanded="true">
+                                        🖥️ Виртуальная машина Ethereum (EVM)
+                                    </button>
+                                </h3>
+                                <div id="evm" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <p><strong>EVM</strong> — это "компьютер" внутри блокчейна, который выполняет
+                                            код смарт-контрактов:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Виртуальная среда:</strong> изолированная от внешнего мира</li>
+                                            <li><strong>Детерминизм:</strong> один код всегда даёт одинаковый результат
+                                            </li>
+                                            <li><strong>Газ:</strong> плата за вычислительные ресурсы</li>
+                                            <li><strong>Совместимость:</strong> EVM стандарт используют сотни блокчейнов
+                                            </li>
+                                        </ul>
+                                        <div class="alert alert-light">
+                                            <small><strong>Аналогия:</strong> EVM как операционная система для
+                                                децентрализованных приложений</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Смарт-контракты -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#smartContracts" aria-expanded="false">
+                                        📜 Смарт-контракты
+                                    </button>
+                                </h3>
+                                <div id="smartContracts" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p>Программы, которые автоматически выполняют условия без посредников:</p>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <h6>💰 DeFi приложения</h6>
+                                                <p class="text-muted small">Uniswap, Aave, Compound</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>🎨 NFT коллекции</h6>
+                                                <p class="text-muted small">OpenSea, Bored Apes, CryptoPunks</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>🎮 Игры</h6>
+                                                <p class="text-muted small">Axie Infinity, Decentraland</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>🏛️ DAO</h6>
+                                                <p class="text-muted small">Децентрализованные организации</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Газ и комиссии -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#gas" aria-expanded="false">
+                                        ⛽ Газ и комиссии
+                                    </button>
+                                </h3>
+                                <div id="gas" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Газ</strong> — это единица измерения вычислительной работы в
+                                            Ethereum:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Gas Limit:</strong> максимальное количество газа для транзакции
+                                            </li>
+                                            <li><strong>Gas Price:</strong> цена за единицу газа в wei (gwei)</li>
+                                            <li><strong>EIP-1559:</strong> базовая комиссия + чаевые</li>
+                                        </ul>
+                                        <div class="alert alert-warning">
+                                            <small><strong>Пример:</strong> Простой перевод ETH = ~21,000 газа. При цене
+                                                20 gwei комиссия составит ~$5-15</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 3: Экосистема Ethereum -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Экосистема Ethereum</h2>
+
+                        <div class="row g-4">
+                            <!-- DeFi -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="bi bi-bank text-success me-2"></i>
+                                            Децентрализованные финансы (DeFi)
+                                        </h5>
+                                        <p class="card-text">Финансовые сервисы без банков и посредников</p>
+                                        <ul class="list-unstyled small">
+                                            <li><strong>Uniswap:</strong> децентрализованная биржа</li>
+                                            <li><strong>Aave:</strong> кредитование и займы</li>
+                                            <li><strong>MakerDAO:</strong> стейблкоин DAI</li>
+                                            <li><strong>Compound:</strong> автоматические проценты</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NFT -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="bi bi-image text-primary me-2"></i>
+                                            NFT и цифровое искусство
+                                        </h5>
+                                        <p class="card-text">Невзаимозаменяемые токены для уникальных активов</p>
+                                        <ul class="list-unstyled small">
+                                            <li><strong>OpenSea:</strong> крупнейший NFT маркетплейс</li>
+                                            <li><strong>Bored Apes:</strong> популярная коллекция</li>
+                                            <li><strong>ENS:</strong> доменные имена .eth</li>
+                                            <li><strong>Art Blocks:</strong> генеративное искусство</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="bi bi-layers text-warning me-2"></i>
+                                            Layer 2 решения
+                                        </h5>
+                                        <p class="card-text">Масштабирование с низкими комиссиями</p>
+                                        <ul class="list-unstyled small">
+                                            <li><strong>Polygon:</strong> сайдчейн с дешёвыми транзакциями</li>
+                                            <li><strong>Arbitrum:</strong> Optimistic Rollup</li>
+                                            <li><strong>Optimism:</strong> ещё один Optimistic Rollup</li>
+                                            <li><strong>zkSync:</strong> Zero-Knowledge Rollup</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Web3 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="bi bi-globe text-info me-2"></i>
+                                            Web3 и децентрализация
+                                        </h5>
+                                        <p class="card-text">Новый интернет без цензуры и монополий</p>
+                                        <ul class="list-unstyled small">
+                                            <li><strong>IPFS:</strong> децентрализованное хранение</li>
+                                            <li><strong>MetaMask:</strong> кошелёк для Web3</li>
+                                            <li><strong>DAO:</strong> децентрализованные организации</li>
+                                            <li><strong>DID:</strong> цифровая идентичность</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 4: Ethereum 2.0 и развитие -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Эволюция Ethereum</h2>
+
+                        <div class="timeline">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <strong>The Merge (2022)</strong>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Переход с Proof of Work на Proof of Stake:</p>
+                                            <ul class="mb-0">
+                                                <li>Снижение энергопотребления на 99.95%</li>
+                                                <li>Стейкинг ETH для валидаторов</li>
+                                                <li>Дефляционная модель</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <strong>Будущие обновления</strong>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Планируемые улучшения:</p>
+                                            <ul class="mb-0">
+                                                <li><strong>Sharding:</strong> параллельная обработка</li>
+                                                <li><strong>Proto-Danksharding:</strong> дешёвые rollup'ы</li>
+                                                <li><strong>Account Abstraction:</strong> умные кошельки</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 5: Преимущества и недостатки -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Преимущества и недостатки</h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-success mb-4">
+                                    <div class="card-header bg-success text-white">
+                                        <i class="bi bi-check-circle me-2"></i>Преимущества
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check text-success me-2"></i>
+                                                <strong>Программируемость:</strong> возможность создавать сложные
+                                                приложения
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check text-success me-2"></i>
+                                                <strong>Экосистема:</strong> тысячи проектов и разработчиков
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check text-success me-2"></i>
+                                                <strong>Стандарты:</strong> ERC-20, ERC-721, ERC-1155
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check text-success me-2"></i>
+                                                <strong>Децентрализация:</strong> тысячи валидаторов
+                                            </li>
+                                            <li class="mb-0">
+                                                <i class="bi bi-check text-success me-2"></i>
+                                                <strong>Инновации:</strong> постоянное развитие и улучшения
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-warning">
+                                    <div class="card-header bg-warning text-dark">
+                                        <i class="bi bi-exclamation-triangle me-2"></i>Недостатки
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-x text-warning me-2"></i>
+                                                <strong>Высокие комиссии:</strong> $5-50 за транзакцию в пиковые периоды
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x text-warning me-2"></i>
+                                                <strong>Низкая пропускная способность:</strong> ~15 транзакций в секунду
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x text-warning me-2"></i>
+                                                <strong>Сложность:</strong> трудно для новичков
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x text-warning me-2"></i>
+                                                <strong>Ошибки в коде:</strong> смарт-контракты нельзя изменить
+                                            </li>
+                                            <li class="mb-0">
+                                                <i class="bi bi-x text-warning me-2"></i>
+                                                <strong>Конкуренция:</strong> Solana, Cardano, Avalanche
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 6: Сравнение с другими сетями -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Сравнение с другими блокчейнами</h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Параметр</th>
+                                        <th>
+                                            <img src="../../../assets/img/coin/ETH.png" alt="ETH"
+                                                class="rounded-circle me-2"
+                                                style="width: 20px; height: 20px; object-fit: cover;">
+                                            Ethereum
+                                        </th>
+                                        <th>
+                                            <img src="../../../assets/img/coin/SOL.png" alt="SOL"
+                                                class="rounded-circle me-2"
+                                                style="width: 20px; height: 20px; object-fit: cover;">
+                                            Solana
+                                        </th>
+                                        <th>
+                                            <img src="../../../assets/img/coin/BNB.png" alt="BNB"
+                                                class="rounded-circle me-2"
+                                                style="width: 20px; height: 20px; object-fit: cover;">
+                                            BSC
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>TPS</strong></td>
+                                        <td>~15</td>
+                                        <td>~3,000</td>
+                                        <td>~100</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Комиссии</strong></td>
+                                        <td>$5-50</td>
+                                        <td>$0.01</td>
+                                        <td>$0.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Валидаторы</strong></td>
+                                        <td>1,000,000+</td>
+                                        <td>~1,900</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>TVL в DeFi</strong></td>
+                                        <td>$50+ млрд</td>
+                                        <td>$5+ млрд</td>
+                                        <td>$10+ млрд</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Экосистема</strong></td>
+                                        <td>Самая большая</td>
+                                        <td>Быстрорастущая</td>
+                                        <td>Большая</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card border-0 bg-light">
+                            <div class="card-body">
+                                <h2 class="h3 fw-bold mb-3">Заключение</h2>
+                                <p class="card-text">
+                                    Ethereum остаётся наиболее важной платформой в криптомире после Bitcoin.
+                                    Несмотря на высокие комиссии и ограничения масштабируемости, его роль
+                                    как фундамента для DeFi, NFT и Web3 неоспорима.
+                                </p>
+                                <p class="card-text">
+                                    Переход на Proof of Stake и будущие обновления (шардинг, danksharding)
+                                    должны решить основные проблемы сети. Для новичков Ethereum — это
+                                    обязательная для изучения экосистема, даже если вы планируете
+                                    использовать другие блокчейны.
+                                </p>
+                                <p class="card-text mb-0">
+                                    <strong>ETH</strong> как актив остаётся одной из самых популярных
+                                    криптовалют для долгосрочных инвестиций благодаря дефляционной
+                                    модели и растущему спросу на блокспейс.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
