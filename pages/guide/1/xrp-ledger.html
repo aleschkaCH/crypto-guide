@@ -1,0 +1,575 @@
+<!-- /pages/guide/1/xrp-ledger.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRP Ledger (XRP) | Обзор блокчейн-сети - Crypto Guide CH</title>
+    <meta name="description"
+        content="Полный обзор XRP Ledger: архитектура, консенсус, возможности и практическое применение. Узнайте об особенностях сети Ripple для международных переводов.">
+    <meta name="keywords"
+        content="XRP Ledger, Ripple, XRP, блокчейн, криптовалюта, международные переводы, консенсус, финтех">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <!-- Заголовок статьи -->
+                <header class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-3">
+                            <img src="../../../assets/img/coin/XRP.png" alt="XRP" class="rounded-circle"
+                                style="width: 48px; height: 48px; object-fit: cover;">
+                        </div>
+                        <div>
+                            <h1 class="display-5 fw-bold mb-1">XRP Ledger (XRP)</h1>
+                            <p class="lead text-muted mb-0">Блокчейн для мгновенных международных переводов</p>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 shadow-sm mb-5">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-lightbulb-fill fs-4"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4 class="alert-heading h5">Кратко о XRP Ledger</h4>
+                            <p class="mb-0">
+                                XRP Ledger — это энергоэффективная блокчейн-сеть, созданная для быстрых
+                                международных платежей. Транзакции обрабатываются за 3-5 секунд с минимальными
+                                комиссиями (около $0.0002). Использует уникальный консенсус-протокол без майнинга,
+                                что делает её одной из самых экологичных криптовалютных сетей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Основное содержание -->
+                <article>
+                    <!-- Что такое XRP Ledger -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-info-circle-fill text-primary me-2"></i>
+                                    Что такое XRP Ledger?
+                                </h2>
+                                <p class="card-text">
+                                    XRP Ledger (XRPL) — это децентрализованная блокчейн-сеть, запущенная в 2012 году
+                                    компанией Ripple Labs. Основная цель сети — решить проблемы традиционной банковской
+                                    системы: медленные международные переводы, высокие комиссии и сложность
+                                    взаимодействия между различными валютами.
+                                </p>
+                                <p class="card-text">
+                                    В отличие от Bitcoin и Ethereum, XRP Ledger изначально проектировался как
+                                    платёжная система, а не как платформа для смарт-контрактов. Это позволило
+                                    создать сеть, оптимизированную именно для финансовых операций.
+                                </p>
+                                <div class="bg-light rounded p-3 mt-3">
+                                    <h5 class="mb-3">
+                                        <i class="bi bi-star-fill text-warning me-2"></i>
+                                        Ключевые особенности
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-lightning-fill text-primary me-2"></i>
+                                                    Скорость: 3-5 секунд
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-coin text-success me-2"></i>
+                                                    Комиссия: ~$0.0002
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-speedometer2 text-info me-2"></i>
+                                                    Пропускная способность: 1,500 TPS
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-leaf-fill text-success me-2"></i>
+                                                    Энергоэффективность
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-globe text-primary me-2"></i>
+                                                    Международные переводы
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-arrow-left-right text-info me-2"></i>
+                                                    Обмен валют
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Архитектура и консенсус -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-gear-fill text-primary me-2"></i>
+                                    Архитектура и консенсус
+                                </h2>
+                                <h4 class="h5 mb-3">Federated Consensus Protocol</h4>
+                                <p class="card-text">
+                                    XRP Ledger использует уникальный алгоритм консенсуса, который отличается от
+                                    Proof of Work и Proof of Stake. Вместо майнеров или валидаторов, сеть
+                                    полагается на список доверенных узлов (UNL - Unique Node List).
+                                </p>
+
+                                <div class="accordion mb-4" id="consensusAccordion">
+                                    <!-- Как работает консенсус -->
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#consensusWork" aria-expanded="true">
+                                                <i class="bi bi-diagram-3-fill me-2"></i>
+                                                Как работает консенсус в XRPL
+                                            </button>
+                                        </h3>
+                                        <div id="consensusWork" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <p><strong>1. Предложение транзакций:</strong> Валидаторы предлагают
+                                                    набор транзакций для включения в следующий леджер.</p>
+
+                                                <p><strong>2. Голосование:</strong> Каждый валидатор голосует за
+                                                    транзакции, которые считает валидными.</p>
+
+                                                <p><strong>3. Консенсус:</strong> Транзакция включается в леджер,
+                                                    если за неё проголосовало минимум 80% доверенных валидаторов.</p>
+
+                                                <p><strong>4. Закрытие леджера:</strong> Новый леджер создаётся
+                                                    каждые 3-5 секунд.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Валидаторы -->
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#validators"
+                                                aria-expanded="false">
+                                                <i class="bi bi-shield-check-fill me-2"></i>
+                                                Валидаторы и UNL
+                                            </button>
+                                        </h3>
+                                        <div id="validators" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <p><strong>Валидаторы:</strong> Узлы, которые участвуют в процессе
+                                                    консенсуса. Любой может запустить валидатор.</p>
+
+                                                <p><strong>UNL (Unique Node List):</strong> Список доверенных
+                                                    валидаторов, которым узел доверяет при достижении консенсуса.</p>
+
+                                                <p><strong>Децентрализация:</strong> В сети работает более 150
+                                                    валидаторов, управляемых разными организациями по всему миру.</p>
+
+                                                <div class="alert alert-info mt-3">
+                                                    <i class="bi bi-info-circle me-2"></i>
+                                                    Ripple Labs управляет лишь 4-6 валидаторами из 35+ в стандартном UNL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="h5 mb-3">Структура леджера</h4>
+                                <p class="card-text">
+                                    XRP Ledger состоит из последовательности леджеров (аналог блоков), каждый из
+                                    которых содержит полное состояние всех счетов, ордеров и настроек сети на
+                                    определённый момент времени.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Возможности сети -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-tools text-primary me-2"></i>
+                                    Возможности XRP Ledger
+                                </h2>
+
+                                <div class="row">
+                                    <!-- Платежи -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-send-fill text-primary me-2"></i>
+                                                Платежи
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">Прямые переводы XRP</li>
+                                                <li class="mb-2">Кросс-валютные платежи</li>
+                                                <li class="mb-2">Автоматическое нахождение пути</li>
+                                                <li>Многоподписные транзакции</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Децентрализованная биржа -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-arrow-left-right text-success me-2"></i>
+                                                Встроенная DEX
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">Ордербуки для любых активов</li>
+                                                <li class="mb-2">Автоматическое исполнение сделок</li>
+                                                <li class="mb-2">Создание торговых пар</li>
+                                                <li>Арбитражные возможности</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Токенизация -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-coin text-warning me-2"></i>
+                                                Issued Currencies
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">Создание пользовательских токенов</li>
+                                                <li class="mb-2">Стейблкоины (USD, EUR, etc.)</li>
+                                                <li class="mb-2">Доверительные линии</li>
+                                                <li>Замороженные активы</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Эскроу -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="bg-light rounded p-3 h-100">
+                                            <h4 class="h5 mb-3">
+                                                <i class="bi bi-clock-fill text-info me-2"></i>
+                                                Эскроу и условные платежи
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">Заблокированные платежи</li>
+                                                <li class="mb-2">Условия по времени</li>
+                                                <li class="mb-2">Условия по криптографии</li>
+                                                <li>Автоматическое исполнение</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Практическое применение -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-briefcase-fill text-primary me-2"></i>
+                                    Практическое применение
+                                </h2>
+
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <h4 class="h5 mb-3">
+                                            <i class="bi bi-bank text-primary me-2"></i>
+                                            Банковский сектор
+                                        </h4>
+                                        <p class="text-muted">
+                                            Банки используют XRP для международных переводов, заменяя медленную
+                                            систему SWIFT. Это позволяет сократить время перевода с дней до секунд
+                                            и значительно снизить комиссии.
+                                        </p>
+                                        <div class="d-flex align-items-center text-success">
+                                            <i class="bi bi-check-circle-fill me-2"></i>
+                                            <small>Используют 200+ финансовых учреждений</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h4 class="h5 mb-3">
+                                            <i class="bi bi-globe text-success me-2"></i>
+                                            Денежные переводы
+                                        </h4>
+                                        <p class="text-muted">
+                                            Платформы денежных переводов интегрируют XRPL для быстрых
+                                            международных платежей. Особенно популярно в развивающихся странах
+                                            для отправки денег мигрантами.
+                                        </p>
+                                        <div class="d-flex align-items-center text-success">
+                                            <i class="bi bi-check-circle-fill me-2"></i>
+                                            <small>Экономия до 60% на комиссиях</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h4 class="h5 mb-3">
+                                            <i class="bi bi-credit-card text-warning me-2"></i>
+                                            Платёжные системы
+                                        </h4>
+                                        <p class="text-muted">
+                                            Интеграция в платёжные приложения для мгновенных переводов между
+                                            пользователями. Поддержка микроплатежей благодаря низким комиссиям.
+                                        </p>
+                                        <div class="d-flex align-items-center text-success">
+                                            <i class="bi bi-check-circle-fill me-2"></i>
+                                            <small>Подходит для микроплатежей</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h4 class="h5 mb-3">
+                                            <i class="bi bi-building text-info me-2"></i>
+                                            Корпоративные решения
+                                        </h4>
+                                        <p class="text-muted">
+                                            Компании используют XRPL для международных расчётов с поставщиками,
+                                            выплат зарплат в разных странах и управления ликвидностью.
+                                        </p>
+                                        <div class="d-flex align-items-center text-success">
+                                            <i class="bi bi-check-circle-fill me-2"></i>
+                                            <small>Снижение операционных расходов</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Преимущества и недостатки -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-balance-scale text-primary me-2"></i>
+                                    Преимущества и ограничения
+                                </h2>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="bg-success bg-opacity-10 rounded p-3 mb-3">
+                                            <h4 class="h5 mb-3 text-success">
+                                                <i class="bi bi-check-circle-fill me-2"></i>
+                                                Преимущества
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-lightning-fill text-success me-2"></i>
+                                                    Высокая скорость транзакций
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-coin text-success me-2"></i>
+                                                    Минимальные комиссии
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-leaf-fill text-success me-2"></i>
+                                                    Энергоэффективность
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-building text-success me-2"></i>
+                                                    Корпоративная поддержка
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-globe text-success me-2"></i>
+                                                    Масштабируемость
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-arrow-left-right text-success me-2"></i>
+                                                    Встроенная DEX
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="bg-warning bg-opacity-10 rounded p-3 mb-3">
+                                            <h4 class="h5 mb-3 text-warning">
+                                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                                Ограничения
+                                            </h4>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-building text-warning me-2"></i>
+                                                    Централизация разработки
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-gear text-warning me-2"></i>
+                                                    Ограниченные смарт-контракты
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-people text-warning me-2"></i>
+                                                    Меньше разработчиков
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-shield text-warning me-2"></i>
+                                                    Зависимость от UNL
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-graph-down text-warning me-2"></i>
+                                                    Волатильность XRP
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-briefcase text-warning me-2"></i>
+                                                    Регуляторные риски
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Сравнение с другими сетями -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-bar-chart text-primary me-2"></i>
+                                    Сравнение с другими сетями
+                                </h2>
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Характеристика</th>
+                                                <th>XRP Ledger</th>
+                                                <th>Bitcoin</th>
+                                                <th>Ethereum</th>
+                                                <th>BSC</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Время транзакции</strong></td>
+                                                <td class="text-success">3-5 сек</td>
+                                                <td class="text-danger">10+ мин</td>
+                                                <td class="text-warning">12+ сек</td>
+                                                <td class="text-success">3 сек</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Комиссия</strong></td>
+                                                <td class="text-success">~$0.0002</td>
+                                                <td class="text-danger">$1-50</td>
+                                                <td class="text-warning">$1-100</td>
+                                                <td class="text-success">$0.1-1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>TPS</strong></td>
+                                                <td class="text-success">1,500</td>
+                                                <td class="text-danger">7</td>
+                                                <td class="text-warning">15</td>
+                                                <td class="text-info">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Консенсус</strong></td>
+                                                <td>Federated</td>
+                                                <td>PoW</td>
+                                                <td>PoS</td>
+                                                <td>PoSA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Экология</strong></td>
+                                                <td class="text-success">Очень низкое потребление</td>
+                                                <td class="text-danger">Высокое потребление</td>
+                                                <td class="text-success">Низкое потребление</td>
+                                                <td class="text-info">Среднее потребление</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h3 mb-4">
+                                    <i class="bi bi-lightbulb-fill text-primary me-2"></i>
+                                    Заключение
+                                </h2>
+                                <p class="card-text">
+                                    XRP Ledger представляет собой высокоэффективную блокчейн-сеть,
+                                    специально оптимизированную для финансовых операций. Её уникальный
+                                    подход к консенсусу обеспечивает быстрые и дешёвые транзакции,
+                                    что делает сеть привлекательной для банков и финтех-компаний.
+                                </p>
+                                <p class="card-text">
+                                    Несмотря на некоторые ограничения в области смарт-контрактов и
+                                    децентрализации, XRPL остаётся одним из лидеров в сфере
+                                    международных платежей и показывает стабильный рост корпоративного
+                                    внедрения.
+                                </p>
+                                <p class="card-text mb-0">
+                                    Для пользователей, заинтересованных в быстрых международных переводах
+                                    с минимальными комиссиями, XRP Ledger предлагает одно из лучших
+                                    решений на рынке криптовалют.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
