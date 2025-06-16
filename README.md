@@ -71,6 +71,7 @@ crypto-guide/
     │   │   ├── interoperability.html
     │   │   └── energy-ecology.html
     │   ├── 1/                  # Обзор блокчейн-сетей
+    │   │   ├── blockchain-networks.html
     │   ├── 2/                  # Криптокошельки и транзакции
     │   ├── 3/                  # Криптофинансы и инвестиции
     │   ├── 4/                  # Заработок на криптовалютах
