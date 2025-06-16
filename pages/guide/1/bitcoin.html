@@ -1,0 +1,353 @@
+<!-- /pages/guide/1/bitcoin.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin (BTC) | Crypto Guide CH</title>
+    <meta name="description"
+        content="Полный обзор Bitcoin (BTC): история создания, принципы работы, технические особенности, майнинг, преимущества и недостатки первой криптовалюты.">
+    <meta name="keywords"
+        content="Bitcoin, BTC, криптовалюта, блокчейн, Сатоши Накамото, майнинг, PoW, цифровое золото">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок -->
+                <header class="mb-5 text-center">
+                    <div class="mb-3">
+                        <img src="../../../assets/img/coin/BTC.png" alt="Bitcoin" class="rounded-circle"
+                            style="width: 80px; height: 80px; object-fit: cover;">
+                    </div>
+                    <h1 class="display-4 fw-bold mb-3">Bitcoin (BTC)</h1>
+                    <p class="lead text-muted">Первая криптовалюта и цифровое золото современности</p>
+                    <br>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 mb-5">
+                    <div class="d-flex">
+                        <i class="bi bi-info-circle-fill me-3 mt-1"></i>
+                        <div>
+                            <h5 class="alert-heading">Быстрый ответ</h5>
+                            <p class="mb-0">
+                                <strong>Bitcoin (BTC)</strong> — первая и самая известная криптовалюта, созданная в 2009
+                                году анонимным разработчиком Сатоши Накамото.
+                                Работает на алгоритме консенсуса <strong>Proof-of-Work</strong>, обеспечивая
+                                максимальную безопасность и децентрализацию.
+                                Используется как цифровой аналог золота для долгосрочного хранения стоимости.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Основной контент -->
+                <article>
+                    <!-- Раздел 1: История и создание -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">История создания</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Bitcoin был создан в 2008 году, когда анонимный разработчик (или группа
+                                    разработчиков) под псевдонимом <strong>Сатоши Накамото</strong>
+                                    опубликовал белую книгу "Bitcoin: A Peer-to-Peer Electronic Cash System". Первый
+                                    блок сети был добыт 3 января 2009 года.
+                                </p>
+                                <p class="card-text">
+                                    Идея возникла как ответ на финансовый кризис 2008 года и необходимость создания
+                                    децентрализованной валюты,
+                                    не зависящей от центральных банков и государств. Bitcoin стал первой успешной
+                                    реализацией концепции цифровых денег.
+                                </p>
+                                <div class="alert alert-light border-0 mb-0">
+                                    <strong>Интересный факт:</strong> В генезис-блоке Bitcoin содержится сообщение:
+                                    "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" — отсылка к
+                                    новости о банковском кризисе.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 2: Технические особенности -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Технические характеристики</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i
+                                                class="bi bi-gear-fill text-primary me-2"></i>Консенсус</h5>
+                                        <p class="card-text">
+                                            <strong>Proof-of-Work (PoW)</strong> — майнеры решают криптографические
+                                            задачи для создания новых блоков.
+                                            Обеспечивает максимальную безопасность, но требует больших энергозатрат.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-clock-fill text-success me-2"></i>Время
+                                            блока</h5>
+                                        <p class="card-text">
+                                            Новый блок создается в среднем каждые <strong>10 минут</strong>.
+                                            Сложность майнинга автоматически корректируется каждые 2016 блоков (~2
+                                            недели).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-stack text-warning me-2"></i>Максимальная
+                                            эмиссия</h5>
+                                        <p class="card-text">
+                                            Общее количество Bitcoin ограничено <strong>21 миллионом монет</strong>.
+                                            Каждые 4 года награда за майнинг уменьшается вдвое (халвинг).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i
+                                                class="bi bi-speedometer2 text-info me-2"></i>Пропускная способность
+                                        </h5>
+                                        <p class="card-text">
+                                            Сеть обрабатывает около <strong>7 транзакций в секунду</strong>.
+                                            Комиссии зависят от загруженности сети и приоритета транзакции.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 3: Майнинг -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Майнинг Bitcoin</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <strong>Майнинг</strong> — это процесс добавления новых блоков в блокчейн Bitcoin
+                                    путем решения сложных математических задач.
+                                    Майнеры используют специализированное оборудование (ASIC-майнеры) для поиска
+                                    правильного хеша блока.
+                                </p>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <i class="bi bi-trophy-fill text-warning fs-4 mb-2"></i>
+                                            <h6>Награда за блок</h6>
+                                            <p class="mb-0 small">6.25 BTC (до следующего халвинга)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <i class="bi bi-lightning-charge-fill text-danger fs-4 mb-2"></i>
+                                            <h6>Хеш-рейт сети</h6>
+                                            <p class="mb-0 small">~400 EH/s (экзахешей в секунду)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 bg-light rounded">
+                                            <i class="bi bi-calendar-event-fill text-primary fs-4 mb-2"></i>
+                                            <h6>Следующий халвинг</h6>
+                                            <p class="mb-0 small">Ожидается в 2028 году</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="card-text mb-0">
+                                    Майнинг обеспечивает безопасность сети и подтверждает транзакции. Чем больше
+                                    майнеров участвует в сети,
+                                    тем она становится более защищенной от атак.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 4: Преимущества и недостатки -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Преимущества и недостатки</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0"><i class="bi bi-check-circle-fill me-2"></i>Преимущества</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i
+                                                    class="bi bi-shield-fill-check text-success me-2"></i><strong>Максимальная
+                                                    безопасность</strong> — самая защищенная блокчейн-сеть</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-globe text-success me-2"></i><strong>Глобальная
+                                                    децентрализация</strong> — тысячи узлов по всему миру</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-bank text-success me-2"></i><strong>Цифровое
+                                                    золото</strong> — защита от инфляции</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-graph-up text-success me-2"></i><strong>Ограниченная
+                                                    эмиссия</strong> — дефляционный актив</li>
+                                            <li class="mb-0"><i
+                                                    class="bi bi-people text-success me-2"></i><strong>Широкое
+                                                    признание</strong> — принимается по всему миру</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-warning">
+                                    <div class="card-header bg-warning text-dark">
+                                        <h5 class="mb-0"><i class="bi bi-exclamation-triangle-fill me-2"></i>Недостатки
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i
+                                                    class="bi bi-speedometer text-warning me-2"></i><strong>Низкая
+                                                    скорость</strong> — 7 транзакций в секунду</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-cash-coin text-warning me-2"></i><strong>Высокие
+                                                    комиссии</strong> — при загруженности сети</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-lightning-charge text-warning me-2"></i><strong>Энергопотребление</strong>
+                                                — требует много электроэнергии</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-graph-down text-warning me-2"></i><strong>Волатильность</strong>
+                                                — сильные колебания курса</li>
+                                            <li class="mb-0"><i
+                                                    class="bi bi-code text-warning me-2"></i><strong>Ограниченная
+                                                    функциональность</strong> — нет смарт-контрактов</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 5: Использование -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Основные случаи использования</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 border-0 shadow-sm text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-safe-fill text-primary fs-1 mb-3"></i>
+                                        <h5>Хранение стоимости</h5>
+                                        <p class="card-text small">Долгосрочные инвестиции и защита от инфляции</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 border-0 shadow-sm text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-arrow-left-right text-success fs-1 mb-3"></i>
+                                        <h5>Международные переводы</h5>
+                                        <p class="card-text small">Быстрые переводы без участия банков</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 border-0 shadow-sm text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-shield-check text-info fs-1 mb-3"></i>
+                                        <h5>Финансовая свобода</h5>
+                                        <p class="card-text small">Контроль над собственными средствами</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Раздел 6: Заключение -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-4">Заключение</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Bitcoin остается эталоном децентрализации и безопасности в мире криптовалют.
+                                    Несмотря на технические ограничения, он продолжает развиваться через решения второго
+                                    уровня,
+                                    такие как Lightning Network, которые увеличивают скорость и снижают комиссии.
+                                </p>
+                                <p class="card-text">
+                                    Для новичков Bitcoin — лучший выбор для первого знакомства с криптовалютами
+                                    благодаря
+                                    максимальной безопасности, широкой поддержке и статусу "цифрового золота".
+                                </p>
+                                <p class="card-text mb-0">
+                                    <strong>Рекомендация:</strong> Bitcoin подходит для долгосрочных инвестиций (HODL),
+                                    крупных переводов и как основа криптовалютного портфеля. Для ежедневных транзакций
+                                    лучше рассмотреть более быстрые сети, такие как Solana или TON.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
