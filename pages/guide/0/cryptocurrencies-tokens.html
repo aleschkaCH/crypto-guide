@@ -53,7 +53,7 @@
                             <h5 class="alert-heading">Быстрый ответ</h5>
                             <p class="mb-0">
                                 <strong>Криптовалюты (монеты)</strong>
-                                работают на собственном блокчейне, как Bitcoinили Ethereum.
+                                работают на собственном блокчейне, как Bitcoin или Ethereum.
                                 <br>
                                 <strong>Токены</strong>
                                 создаются на существующих блокчейнах по готовым стандартам.
@@ -141,7 +141,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-currency-bitcoin text-warning fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/BTC.png" alt="Bitcoin"
+                                                class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>Bitcoin (BTC)</h5>
                                         <p class="text-muted small">Первая криптовалюта, сеть для переводов и хранения
                                             стоимости</p>
@@ -152,7 +156,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-hexagon text-primary fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/ETH.png" alt="Ethereum"
+                                                class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>Ethereum (ETH)</h5>
                                         <p class="text-muted small">Платформа для смарт-контрактов и децентрализованных
                                             приложений</p>
@@ -163,7 +171,10 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-diamond text-warning fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/BNB.png" alt="BNB" class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>BNB (BSC)</h5>
                                         <p class="text-muted small">Токен биржи Binance и валюта Binance Smart Chain</p>
                                     </div>
@@ -173,7 +184,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-triangle text-danger fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/TRX.png" alt="Tron"
+                                                class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>TRX (Tron)</h5>
                                         <p class="text-muted small">Платформа для развлекательного контента и DApps</p>
                                     </div>
@@ -183,7 +198,10 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-telegram text-info fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/TON.png" alt="TON" class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>TON</h5>
                                         <p class="text-muted small">The Open Network, высокоскоростной блокчейн</p>
                                     </div>
@@ -193,7 +211,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <i class="bi bi-sun text-success fs-1 mb-3"></i>
+                                        <div class="mb-3">
+                                            <img src="../../../assets/img/coin/SOL.png" alt="Solana"
+                                                class="rounded-circle"
+                                                style="width: 60px; height: 60px; object-fit: cover;">
+                                        </div>
                                         <h5>SOL (Solana)</h5>
                                         <p class="text-muted small">Высокопроизводительный блокчейн для DeFi и NFT</p>
                                     </div>
@@ -216,9 +238,15 @@
                                 </h3>
                                 <div id="erc20" class="accordion-collapse collapse show">
                                     <div class="accordion-body">
-                                        <strong>Самый популярный стандарт.</strong>
-                                        Определяет базовые функции: перевод, баланс, одобрение операций.
-                                        <br><br>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="../../../assets/img/coin/ETH.png" alt="Ethereum"
+                                                class="rounded-circle me-3"
+                                                style="width: 40px; height: 40px; object-fit: cover;">
+                                            <div>
+                                                <strong>Самый популярный стандарт.</strong>
+                                                Определяет базовые функции: перевод, баланс, одобрение операций.
+                                            </div>
+                                        </div>
                                         <strong>Примеры:</strong> USDT, LINK, UNI, AAVE, DAI
                                         <br>
                                         <strong>Комиссии:</strong> Оплачиваются в ETH
@@ -235,9 +263,15 @@
                                 </h3>
                                 <div id="bep20" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        <strong>Стандарт для BSC.</strong>
-                                        Совместим с ERC-20, но с более низкими комиссиями.
-                                        <br><br>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="../../../assets/img/coin/BNB.png" alt="BNB"
+                                                class="rounded-circle me-3"
+                                                style="width: 40px; height: 40px; object-fit: cover;">
+                                            <div>
+                                                <strong>Стандарт для BSC.</strong>
+                                                Совместим с ERC-20, но с более низкими комиссиями.
+                                            </div>
+                                        </div>
                                         <strong>Примеры:</strong> CAKE, BUSD, SafeMoon
                                         <br>
                                         <strong>Комиссии:</strong> Оплачиваются в BNB
@@ -254,9 +288,15 @@
                                 </h3>
                                 <div id="trc20" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        <strong>Стандарт для сети Tron.</strong>
-                                        Очень низкие комиссии, популярен для стейблкоинов.
-                                        <br><br>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="../../../assets/img/coin/TRX.png" alt="Tron"
+                                                class="rounded-circle me-3"
+                                                style="width: 40px; height: 40px; object-fit: cover;">
+                                            <div>
+                                                <strong>Стандарт для сети Tron.</strong>
+                                                Очень низкие комиссии, популярен для стейблкоинов.
+                                            </div>
+                                        </div>
                                         <strong>Примеры:</strong> USDT (TRC-20), USDC, WBTC
                                         <br>
                                         <strong>Комиссии:</strong> Оплачиваются в TRX
@@ -273,13 +313,33 @@
                                 </h3>
                                 <div id="other" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        <strong>SPL (Solana):</strong> Токены в сети Solana, комиссии в SOL
-                                        <br>
-                                        <strong>ADA Native (Cardano):</strong> Собственные токены Cardano
-                                        <br>
-                                        <strong>AVAX-C (Avalanche):</strong> EVM-совместимые токены, комиссии в AVAX
-                                        <br>
-                                        <strong>Jettons (TON):</strong> Токены в The Open Network
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <img src="../../../assets/img/coin/SOL.png" alt="Solana"
+                                                    class="rounded-circle me-2"
+                                                    style="width: 24px; height: 24px; object-fit: cover;">
+                                                <strong>SPL (Solana):</strong> Токены в сети Solana, комиссии в SOL
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <img src="../../../assets/img/coin/ADA.png" alt="Cardano"
+                                                    class="rounded-circle me-2"
+                                                    style="width: 24px; height: 24px; object-fit: cover;">
+                                                <strong>ADA Native (Cardano):</strong> Собственные токены Cardano
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <img src="../../../assets/img/coin/AVAX.png" alt="Avalanche"
+                                                    class="rounded-circle me-2"
+                                                    style="width: 24px; height: 24px; object-fit: cover;">
+                                                <strong>AVAX-C (Avalanche):</strong> EVM-совместимые токены, комиссии в
+                                                AVAX
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../../../assets/img/coin/TON.png" alt="TON"
+                                                    class="rounded-circle me-2"
+                                                    style="width: 24px; height: 24px; object-fit: cover;">
+                                                <strong>Jettons (TON):</strong> Токены в The Open Network
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -329,13 +389,19 @@
 
                         <div class="mt-4 bg-light p-4 rounded">
                             <h6>Практический пример:</h6>
-                            <p class="mb-0">
-                                <strong>USDT</strong> существует в разных сетях:
-                                <br>• USDT (ERC-20) — токен в сети Ethereum, комиссии в ETH
-                                <br>• USDT (TRC-20) — токен в сети Tron, комиссии в TRX
-                                <br>• USDT (BEP-20) — токен в BSC, комиссии в BNB
-                                <br>Это один и тот же актив, но в разных блокчейнах!
-                            </p>
+                            <div class="d-flex align-items-start">
+                                <img src="../../../assets/img/coin/USDT.png" alt="USDT" class="rounded-circle me-3 mt-1"
+                                    style="width: 40px; height: 40px; object-fit: cover;">
+                                <div>
+                                    <p class="mb-0">
+                                        <strong>USDT</strong> существует в разных сетях:
+                                        <br>• USDT (ERC-20) — токен в сети Ethereum, комиссии в ETH
+                                        <br>• USDT (TRC-20) — токен в сети Tron, комиссии в TRX
+                                        <br>• USDT (BEP-20) — токен в BSC, комиссии в BNB
+                                        <br>Это один и тот же актив, но в разных блокчейнах!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
