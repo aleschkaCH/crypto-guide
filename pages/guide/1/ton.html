@@ -1,0 +1,580 @@
+<!-- /pages/guide/1/ton.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Open Network (TON) — Блокчейн для миллиардов | Crypto Guide CH</title>
+    <meta name="description"
+        content="TON — высокоскоростной блокчейн, интегрированный с Telegram. Узнайте об архитектуре, возможностях и экосистеме The Open Network.">
+    <meta name="keywords" content="TON, The Open Network, Telegram, блокчейн, криптовалюта, шардинг, масштабируемость">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Заголовок и описание -->
+                    <header class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../../../assets/img/coin/TON.png" alt="TON" class="rounded-circle me-3"
+                                style="width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h1 class="h2 fw-bold mb-1">The Open Network (TON)</h1>
+                                <p class="text-muted mb-0">Высокоскоростной блокчейн нового поколения</p>
+                            </div>
+                        </div>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../../../index.html">Главная</a></li>
+                                <li class="breadcrumb-item"><a href="../guide.html">Руководство</a></li>
+                                <li class="breadcrumb-item active">The Open Network</li>
+                            </ol>
+                        </nav>
+                    </header>
+
+                    <!-- Быстрый ответ -->
+                    <div class="alert alert-info mb-4">
+                        <h6 class="fw-bold mb-2">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            Быстрый ответ
+                        </h6>
+                        <p class="mb-0">
+                            <strong>TON</strong> — это высокопроизводительный блокчейн с динамическим шардингом,
+                            способный обрабатывать миллионы транзакций в секунду. Уникальная интеграция с Telegram
+                            делает TON доступным для миллиардов пользователей мессенджера.
+                        </p>
+                    </div>
+
+                    <!-- Основная статья -->
+                    <article>
+                        <!-- Раздел 1: Что такое TON -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Что такое The Open Network?</h2>
+
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-8">
+                                    <p>
+                                        The Open Network (TON) — это блокчейн-платформа третьего поколения, изначально
+                                        разработанная командой Telegram. TON использует уникальную архитектуру с
+                                        динамическим шардингом и консенсусом Proof-of-Stake, что позволяет сети
+                                        масштабироваться под любую нагрузку.
+                                    </p>
+                                    <p>
+                                        Главная особенность TON — это тесная интеграция с мессенджером Telegram, что
+                                        открывает доступ к блокчейн-технологиям для миллиардов пользователей по всему
+                                        миру.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-primary">
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-bold text-primary">Ключевые цифры</h6>
+                                            <div class="mb-2">
+                                                <strong>~5 сек</strong><br>
+                                                <small class="text-muted">время блока</small>
+                                            </div>
+                                            <div class="mb-2">
+                                                <strong>$0.01</strong><br>
+                                                <small class="text-muted">комиссия</small>
+                                            </div>
+                                            <div>
+                                                <strong>1M+ TPS</strong><br>
+                                                <small class="text-muted">потенциальная скорость</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-light border-start border-primary border-4">
+                                <h6 class="fw-bold">История создания</h6>
+                                <p class="mb-0">
+                                    TON был разработан Павлом и Николаем Дуровыми как часть экосистемы Telegram. После
+                                    юридических проблем с SEC в 2020 году проект стал полностью децентрализованным и
+                                    управляется сообществом разработчиков.
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 2: Техническая архитектура -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Техническая архитектура TON</h2>
+
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="card h-100 border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-diagram-3-fill me-2"></i>
+                                                Динамический шардинг
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>TON использует уникальную систему динамического шардинга:</p>
+                                            <ul class="mb-3">
+                                                <li><strong>Masterchain:</strong> основная цепь управления</li>
+                                                <li><strong>Workchains:</strong> рабочие цепи для приложений</li>
+                                                <li><strong>Shardchains:</strong> автоматически создаваемые шарды</li>
+                                            </ul>
+                                            <p class="mb-0">
+                                                Сеть автоматически разделяется на шарды при увеличении нагрузки и
+                                                объединяется при её снижении.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-shield-check-fill me-2"></i>
+                                                BFT Proof-of-Stake
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Консенсус TON основан на:</p>
+                                            <ul class="mb-3">
+                                                <li><strong>Byzantine Fault Tolerance:</strong> защита от атак</li>
+                                                <li><strong>Валидаторы:</strong> минимум 300 TON для стейкинга</li>
+                                                <li><strong>Instant Hypercube Routing:</strong> быстрая маршрутизация
+                                                </li>
+                                            </ul>
+                                            <p class="mb-0">
+                                                Алгоритм обеспечивает безопасность даже при компрометации до 1/3
+                                                валидаторов.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4 border-warning">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5 class="mb-0">
+                                        <i class="bi bi-code-square me-2"></i>
+                                        Языки программирования
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>FunC</h6>
+                                            <p class="small">Основной язык для смарт-контрактов TON. Компилируется в
+                                                TVM-байткод.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Fift</h6>
+                                            <p class="small">Low-level язык для работы с TVM и создания транзакций.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 3: Интеграция с Telegram -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">
+                                <i class="bi bi-telegram text-primary me-2"></i>
+                                Интеграция с Telegram
+                            </h2>
+
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-wallet2 display-6 text-primary mb-3"></i>
+                                            <h5>Telegram Wallet</h5>
+                                            <p class="small">Встроенный кошелек прямо в мессенджере. Отправка TON через
+                                                чат-боты и P2P-переводы.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-robot display-6 text-primary mb-3"></i>
+                                            <h5>TON Bots</h5>
+                                            <p class="small">Telegram-боты с поддержкой криптоплатежей. Покупки, донаты
+                                                и игры прямо в чате.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-globe display-6 text-primary mb-3"></i>
+                                            <h5>TON Sites</h5>
+                                            <p class="small">Децентрализованные сайты, доступные через @-домены в
+                                                Telegram.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-light mt-4">
+                                <h6 class="fw-bold">Пример использования</h6>
+                                <p class="mb-2">
+                                    Пользователь может отправить TON другу просто написав в Telegram:
+                                    <code>/send 10 TON @username</code>
+                                </p>
+                                <p class="mb-0">
+                                    Или купить товар у бота, оплатив криптовалютой без выхода из мессенджера.
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 4: Экосистема TON -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Экосистема TON</h2>
+
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <div class="card border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h5 class="mb-0">DeFi на TON</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="mb-3">
+                                                <li><strong>TON DEX:</strong> децентрализованная биржа</li>
+                                                <li><strong>Ston.fi:</strong> AMM для обмена токенов</li>
+                                                <li><strong>TON Diamonds:</strong> NFT-маркетплейс</li>
+                                                <li><strong>Jettons:</strong> стандарт токенов TON</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h5 class="mb-0">Инфраструктура</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="mb-3">
+                                                <li><strong>TON DNS:</strong> человекочитаемые адреса</li>
+                                                <li><strong>TON Storage:</strong> децентрализованное хранилище</li>
+                                                <li><strong>TON Proxy:</strong> анонимный доступ</li>
+                                                <li><strong>TON Payments:</strong> микроплатежи</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5 class="mb-0">
+                                        <i class="bi bi-gamepad2 me-2"></i>
+                                        GameFi и приложения
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <h6>Игры</h6>
+                                            <ul class="small mb-0">
+                                                <li>Notcoin — tap-to-earn</li>
+                                                <li>Hamster Kombat — кликер</li>
+                                                <li>TON Play — игровая платформа</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6>NFT</h6>
+                                            <ul class="small mb-0">
+                                                <li>Fragment — домены и номера</li>
+                                                <li>TON Diamonds — маркетплейс</li>
+                                                <li>Getgems — NFT-платформа</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6>Социальные</h6>
+                                            <ul class="small mb-0">
+                                                <li>TON Community — DAO</li>
+                                                <li>Tegro — мессенджер Web3</li>
+                                                <li>Social Mining — соцсети</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 5: Преимущества и недостатки -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Преимущества и ограничения</h2>
+
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="card border-success h-100">
+                                        <div class="card-header bg-success text-white">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-check-circle-fill me-2"></i>
+                                                Преимущества
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="mb-0">
+                                                <li><strong>Масштабируемость:</strong> миллионы TPS теоретически</li>
+                                                <li><strong>Низкие комиссии:</strong> $0.01 за транзакцию</li>
+                                                <li><strong>Быстрота:</strong> 5-секундные блоки</li>
+                                                <li><strong>Telegram интеграция:</strong> доступ для миллиардов</li>
+                                                <li><strong>Энергоэффективность:</strong> Proof-of-Stake</li>
+                                                <li><strong>Развитая экосистема:</strong> DeFi, NFT, игры</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="card border-warning h-100">
+                                        <div class="card-header bg-warning text-dark">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                                Ограничения
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="mb-0">
+                                                <li><strong>Сложность архитектуры:</strong> трудно понять новичкам</li>
+                                                <li><strong>Молодая экосистема:</strong> меньше приложений чем у
+                                                    Ethereum</li>
+                                                <li><strong>Централизация разработки:</strong> сильная зависимость от
+                                                    Telegram</li>
+                                                <li><strong>Конкуренция:</strong> много альтернативных L1-решений</li>
+                                                <li><strong>Языки программирования:</strong> FunC менее популярен</li>
+                                                <li><strong>Ликвидность:</strong> меньше чем у топовых сетей</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 6: Сравнение с другими сетями -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Сравнение с другими блокчейнами</h2>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Параметр</th>
+                                            <th>
+                                                <img src="../../../assets/img/coin/TON.png" alt="TON"
+                                                    class="rounded-circle me-2" style="width: 20px; height: 20px;">
+                                                TON
+                                            </th>
+                                            <th>
+                                                <img src="../../../assets/img/coin/ETH.png" alt="ETH"
+                                                    class="rounded-circle me-2" style="width: 20px; height: 20px;">
+                                                Ethereum
+                                            </th>
+                                            <th>
+                                                <img src="../../../assets/img/coin/SOL.png" alt="SOL"
+                                                    class="rounded-circle me-2" style="width: 20px; height: 20px;">
+                                                Solana
+                                            </th>
+                                            <th>
+                                                <img src="../../../assets/img/coin/BNB.png" alt="BNB"
+                                                    class="rounded-circle me-2" style="width: 20px; height: 20px;">
+                                                BSC
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>TPS</strong></td>
+                                            <td>1M+ (теоретически)</td>
+                                            <td>15</td>
+                                            <td>65,000</td>
+                                            <td>~100</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Время блока</strong></td>
+                                            <td>~5 сек</td>
+                                            <td>~12 сек</td>
+                                            <td>~0.4 сек</td>
+                                            <td>~3 сек</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Комиссия</strong></td>
+                                            <td>$0.01</td>
+                                            <td>$5-50</td>
+                                            <td>$0.00025</td>
+                                            <td>$0.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Консенсус</strong></td>
+                                            <td>BFT PoS</td>
+                                            <td>PoS</td>
+                                            <td>PoH + PoS</td>
+                                            <td>PoS</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Особенность</strong></td>
+                                            <td>Telegram интеграция</td>
+                                            <td>Смарт-контракты</td>
+                                            <td>Высокая скорость</td>
+                                            <td>EVM совместимость</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <!-- Раздел 7: Как начать работу с TON -->
+                        <section class="mb-5">
+                            <h2 class="h3 fw-bold mb-4">Как начать работу с TON</h2>
+
+                            <div class="row g-4">
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0">Пошаговое руководство</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="mb-0">
+                                                <li class="mb-3">
+                                                    <strong>Создайте кошелек:</strong>
+                                                    <ul class="mt-2">
+                                                        <li>Telegram Wallet — в самом мессенджере</li>
+                                                        <li>Tonkeeper — мобильное приложение</li>
+                                                        <li>TON Wallet — браузерное расширение</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <strong>Получите TON:</strong>
+                                                    <ul class="mt-2">
+                                                        <li>Купите на централизованных биржах (Binance, OKX)</li>
+                                                        <li>Обменяйте через P2P в Telegram</li>
+                                                        <li>Используйте фиатные рампы</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <strong>Исследуйте экосистему:</strong>
+                                                    <ul class="mt-2">
+                                                        <li>Попробуйте DeFi на Ston.fi</li>
+                                                        <li>Играйте в TON-игры</li>
+                                                        <li>Покупайте NFT на Fragment</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h5 class="mb-0">Полезные ресурсы</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-2">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    <strong>ton.org</strong> — официальный сайт
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-book me-2"></i>
+                                                    <strong>docs.ton.org</strong> — документация
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-search me-2"></i>
+                                                    <strong>tonscan.org</strong> — explorer
+                                                </li>
+                                                <li class="mb-2">
+                                                    <i class="bi bi-telegram me-2"></i>
+                                                    <strong>@toncoin</strong> — Telegram канал
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Заключение -->
+                        <section class="mb-5">
+                            <div class="card border-primary">
+                                <div class="card-body">
+                                    <h3 class="h4 fw-bold mb-3">
+                                        <i class="bi bi-stars text-primary me-2"></i>
+                                        Заключение
+                                    </h3>
+                                    <p>
+                                        TON представляет собой амбициозную попытку создать блокчейн, способный
+                                        масштабироваться до уровня традиционных платежных систем. Уникальная интеграция
+                                        с Telegram открывает доступ к криптовалютам для миллиардов пользователей, что
+                                        может стать катализатором массового внедрения.
+                                    </p>
+                                    <p>
+                                        Несмотря на техническую сложность и молодость экосистемы, TON демонстрирует
+                                        впечатляющие результаты в области производительности и удобства использования.
+                                        Развитие экосистемы DeFi, игр и социальных приложений делает TON одной из самых
+                                        перспективных блокчейн-платформ.
+                                    </p>
+                                    <p class="mb-0">
+                                        Для новичков TON предлагает простой вход в мир криптовалют через привычный
+                                        интерфейс Telegram, а для разработчиков — мощные инструменты для создания
+                                        масштабируемых децентрализованных приложений.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
