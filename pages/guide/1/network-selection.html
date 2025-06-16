@@ -1,0 +1,425 @@
+<!-- /pages/guide/1/network-selection.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбрать сеть? | Crypto Guide CH</title>
+    <meta name="description"
+        content="Руководство по выбору подходящей блокчейн-сети: критерии выбора, сравнение популярных сетей и практические рекомендации для новичков.">
+    <meta name="keywords"
+        content="выбор блокчейн сети, Bitcoin, Ethereum, BSC, Solana, TON, комиссии, скорость транзакций">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-decoration-none" href="../../../index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="me-2">
+                    <circle cx="12" cy="12" r="10" stroke="#0088cc" stroke-width="2" />
+                    <path d="M8 12h8M12 8v8" stroke="#0088cc" stroke-width="2" />
+                </svg>
+                Crypto Guide CH
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Заголовок -->
+                <header class="mb-5 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Как выбрать сеть?</h1>
+                    <p class="lead text-muted">Разбираемся в критериях выбора блокчейн-сети для ваших потребностей</p>
+                    <br>
+                </header>
+
+                <!-- Быстрый ответ -->
+                <div class="alert alert-info border-0 mb-5">
+                    <h5 class="alert-heading"><i class="bi bi-lightbulb-fill me-2"></i>Быстрый ответ</h5>
+                    <p class="mb-0">
+                        Выбор сети зависит от ваших целей: <strong>Bitcoin</strong> для долгосрочного хранения и
+                        крупных переводов, <strong>Ethereum</strong> для DeFi и NFT, <strong>BSC/Solana/TON</strong>
+                        для дешевых и быстрых транзакций. Учитывайте комиссии, скорость, безопасность и экосистему.
+                    </p>
+                </div>
+
+                <!-- Основной контент -->
+                <article>
+                    <!-- Основные критерии выбора -->
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">
+                            <i class="bi bi-list-check text-primary me-2"></i>
+                            Основные критерии выбора
+                        </h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success">
+                                            <i class="bi bi-cash-coin me-2"></i>Комиссии
+                                        </h5>
+                                        <p class="card-text">
+                                            Размер комиссий за транзакции — ключевой фактор для частых операций.
+                                            Для небольших сумм выбирайте сети с низкими комиссиями.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-info">
+                                            <i class="bi bi-speedometer me-2"></i>Скорость
+                                        </h5>
+                                        <p class="card-text">
+                                            Время подтверждения транзакций влияет на удобство использования.
+                                            Важно для торговли и повседневных платежей.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-warning">
+                                            <i class="bi bi-shield-check me-2"></i>Безопасность
+                                        </h5>
+                                        <p class="card-text">
+                                            Уровень децентрализации и стойкость к атакам.
+                                            Для крупных сумм предпочтительны проверенные временем сети.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-purple">
+                                            <i class="bi bi-diagram-3 me-2"></i>Экосистема
+                                        </h5>
+                                        <p class="card-text">
+                                            Количество и качество доступных приложений, бирж и сервисов.
+                                            Определяет возможности использования.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Сравнение популярных сетей -->
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">
+                            <i class="bi bi-graph-up text-primary me-2"></i>
+                            Сравнение популярных сетей
+                        </h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Сеть</th>
+                                        <th>Комиссия</th>
+                                        <th>Скорость</th>
+                                        <th>Безопасность</th>
+                                        <th>Экосистема</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/BTC.png" alt="Bitcoin"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            Bitcoin
+                                        </td>
+                                        <td><span class="badge bg-danger">Высокая</span></td>
+                                        <td><span class="badge bg-warning text-dark">Медленная</span></td>
+                                        <td><span class="badge bg-success">Максимальная</span></td>
+                                        <td><span class="badge bg-warning text-dark">Ограниченная</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/ETH.png" alt="Ethereum"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            Ethereum
+                                        </td>
+                                        <td><span class="badge bg-warning text-dark">Средняя</span></td>
+                                        <td><span class="badge bg-info">Средняя</span></td>
+                                        <td><span class="badge bg-success">Высокая</span></td>
+                                        <td><span class="badge bg-success">Огромная</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/BNB.png" alt="BSC"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            BSC
+                                        </td>
+                                        <td><span class="badge bg-success">Низкая</span></td>
+                                        <td><span class="badge bg-success">Быстрая</span></td>
+                                        <td><span class="badge bg-warning text-dark">Средняя</span></td>
+                                        <td><span class="badge bg-info">Большая</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/SOL.png" alt="Solana"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            Solana
+                                        </td>
+                                        <td><span class="badge bg-success">Низкая</span></td>
+                                        <td><span class="badge bg-success">Очень быстрая</span></td>
+                                        <td><span class="badge bg-info">Средняя</span></td>
+                                        <td><span class="badge bg-info">Растущая</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/TON.png" alt="TON"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            TON
+                                        </td>
+                                        <td><span class="badge bg-success">Очень низкая</span></td>
+                                        <td><span class="badge bg-success">Очень быстрая</span></td>
+                                        <td><span class="badge bg-info">Средняя</span></td>
+                                        <td><span class="badge bg-warning text-dark">Развивающаяся</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../../assets/img/coin/TRX.png" alt="Tron"
+                                                class="rounded-circle me-2" style="width: 24px; height: 24px;">
+                                            Tron
+                                        </td>
+                                        <td><span class="badge bg-success">Низкая</span></td>
+                                        <td><span class="badge bg-success">Быстрая</span></td>
+                                        <td><span class="badge bg-warning text-dark">Средняя</span></td>
+                                        <td><span class="badge bg-info">Умеренная</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Рекомендации по выбору -->
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">
+                            <i class="bi bi-compass text-primary me-2"></i>
+                            Рекомендации по выбору
+                        </h2>
+
+                        <div class="accordion" id="recommendations">
+                            <!-- Для хранения -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#storage" aria-expanded="true">
+                                        🏦 Для долгосрочного хранения
+                                    </button>
+                                </h3>
+                                <div id="storage" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <strong>Рекомендуем: Bitcoin, Ethereum</strong>
+                                        <br><br>
+                                        Bitcoin остается самой надежной сетью для хранения крупных сумм благодаря
+                                        максимальной децентрализации и проверенности временем. Ethereum подходит для
+                                        хранения токенов и участия в DeFi с высоким уровнем безопасности.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Для повседневных платежей -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#payments" aria-expanded="false">
+                                        💳 Для повседневных платежей
+                                    </button>
+                                </h3>
+                                <div id="payments" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <strong>Рекомендуем: TON, BSC, Tron</strong>
+                                        <br><br>
+                                        Для частых и небольших транзакций выбирайте сети с низкими комиссиями.
+                                        TON особенно удобен благодаря интеграции с Telegram, BSC и Tron предлагают
+                                        широкий выбор стейблкоинов.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Для DeFi -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#defi" aria-expanded="false">
+                                        🔄 Для DeFi и торговли
+                                    </button>
+                                </h3>
+                                <div id="defi" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <strong>Рекомендуем: Ethereum, BSC, Solana</strong>
+                                        <br><br>
+                                        Ethereum предлагает самую развитую DeFi-экосистему с максимальной ликвидностью.
+                                        BSC и Solana — отличная альтернатива с низкими комиссиями и быстрыми
+                                        транзакциями
+                                        для активной торговли.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Для новичков -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#beginners" aria-expanded="false">
+                                        👶 Для новичков
+                                    </button>
+                                </h3>
+                                <div id="beginners" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <strong>Рекомендуем: TON, BSC</strong>
+                                        <br><br>
+                                        Начинайте с сетей, которые прощают ошибки благодаря низким комиссиям.
+                                        TON интегрирован в Telegram и имеет простые кошельки. BSC совместим с
+                                        Ethereum, что упрощает переход к более сложным операциям.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Практические советы -->
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">
+                            <i class="bi bi-gear text-primary me-2"></i>
+                            Практические советы
+                        </h2>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="card border-success">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">✅ Лучшие практики</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Тестируйте небольшими суммами
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Проверяйте адреса дважды
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Используйте несколько сетей
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Следите за загруженностью сети
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Изучайте экосистему перед использованием
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card border-danger">
+                                    <div class="card-header bg-danger text-white">
+                                        <h5 class="mb-0">❌ Частые ошибки</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                                Отправка на неправильную сеть
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                                Игнорирование размера комиссий
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                                Использование новых сетей без изучения
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                                Хранение всех активов в одной сети
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                                Спешка при выборе без анализа
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Заключение -->
+                    <section class="mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h4 mb-3">
+                                    <i class="bi bi-lightbulb-fill text-warning me-2"></i>
+                                    Выводы
+                                </h3>
+                                <p class="card-text">
+                                    Выбор блокчейн-сети зависит от ваших конкретных потребностей и опыта. Новичкам
+                                    стоит начать с простых и дешевых сетей вроде TON или BSC, постепенно изучая
+                                    более сложные экосистемы. Опытные пользователи могут использовать несколько
+                                    сетей одновременно, выбирая оптимальную для каждой задачи.
+                                </p>
+                                <p class="card-text mb-0">
+                                    Помните: нет универсальной "лучшей" сети — есть подходящая под ваши цели.
+                                    Всегда тестируйте новую сеть небольшими суммами и изучайте её особенности
+                                    перед активным использованием.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">Информационный проект &copy; 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted extra-small">Материал носит исключительно образовательный характер</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомные скрипты -->
+    <script src="../../../assets/js/scripts.js"></script>
+</body>
+
+</html>
